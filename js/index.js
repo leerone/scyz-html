@@ -333,18 +333,20 @@ $(function(){
             slider.next();
         });
 
-        timer = setTimeout(autoSlide, 5000);
+        timer = setTimeout(autoSlide, 2000);
     }
 
     function stopAutoSlide() {
         clearTimeout(timer);
 
-        this.removeEventListener('touchstart', stopAutoSlide);
-        this.removeEventListener('mousemove', stopAutoSlide);
+        // this.removeEventListener('touchstart', stopAutoSlide);
+        // this.removeEventListener('mousemove', stopAutoSlide);
     }
 
-    sliderEl.addEventListener('mousemove', stopAutoSlide);
+    sliderEl.addEventListener('mouseover', stopAutoSlide);
     sliderEl.addEventListener('touchstart', stopAutoSlide);
+
+    sliderEl.addEventListener('mouseout', autoSlide);
 
     timer = setTimeout(autoSlide, 2000);
 })
