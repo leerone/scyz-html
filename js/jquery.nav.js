@@ -62,6 +62,9 @@
 
             //Handle clicks on the nav
             this.$nav.on('click.onePageNav', $.proxy(this.handleClick, this));
+            
+            this.$nav.on('mouseover.onePageNav', $.proxy(this.handleMouseover, this));
+            this.$nav.on('mouseout.onePageNav', $.proxy(this.handleMouseout, this));
 
             //Get the section positions
             this.getPositions();
@@ -142,13 +145,23 @@
             return returnValue;
         },
 
+        /*handleMouseover: function(e) {
+            $('#mainNav li.item').removeClass('active');
+            $(e.target).parent('.item').addClass('active');
+            $(e.target).parent('.item').find('ul.sub-nav').show();
+        },
+
+        handleMouseout: function(e) {
+            $(e.target).parent('.item').find('ul.sub-nav').hide();
+        },*/
+
         handleClick: function (e) {
             var self = this;
             var $link = $(e.currentTarget);
             var $parent = $link.parent();
             var newLoc = '#' + self.getHash($link);
 
-            if (!$parent.hasClass(self.config.currentClass)) {
+            if ($parent.hasClass(self.config.currentClass)) {
                 //Start callback
                 if (self.config.begin) {
                     self.config.begin();
