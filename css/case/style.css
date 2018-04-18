@@ -1,6 +1,10 @@
 
 /*--//Typography --*/
 /*-- services --*/
+.case-contrainer {
+	width: 100%;
+	padding: 0px;
+}
 .services-grids{
 	margin:3em 0 0;
 }
