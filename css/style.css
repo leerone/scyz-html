@@ -5,8 +5,8 @@
 html, body {
     margin: 0;
     padding: 0;
-    /*width: 100%;
-    overflow-x: hidden;*/
+    /*width: 100%;*/
+    overflow-x: hidden;
 }
 
 /* Reset
@@ -105,6 +105,7 @@ p {
 #header_wrapper {
     background: #000;
     padding: 20px 0px;
+    width: 1903px;
 }
 
 .header_box {
@@ -366,6 +367,9 @@ a.read_more2:hover {
 #service {
     padding: 60px 0px;
     background: #EFEFEF;
+}
+#service > .container {
+    width: 100%;
 }
 
 .service_wrapper {
@@ -700,8 +704,16 @@ img {
     padding: 60px 0;
 }
 
+.page_section.hr > .container{
+    width: 100%;
+}
+
 .page_section.team {
     padding: 60px 0;
+}
+
+.page_section.team > .container {
+    width:100%;
 }
 
 .page_section.team h6 {
@@ -721,6 +733,10 @@ img {
 
 #aboutUs {
     padding: 60px 0;
+}
+
+.inner_wrapper > .container {
+    width: 100%;
 }
 
 .img-circle {
@@ -780,6 +796,11 @@ img {
 
 .page_section.contact {
     padding: 90px 0 100px;
+}
+
+.footer_wrapper > .container {
+    width: 100%;
+    padding: 0px 100px;
 }
 
 .contact_section {
@@ -1488,7 +1509,10 @@ img {
 
 
 .news_section {
-    padding: 60px 0;
+    padding: 60px 20px;
+}
+.news_section > .container {
+    width: 100%;
 }
 
 /* Portfolio FullScreen Expander */
@@ -1910,6 +1934,7 @@ display: inherit;
         font-size: 16px;
         line-height: 22px;
     }
+    
     .service_block {
         margin-bottom: 20px;
     }
