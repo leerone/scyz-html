@@ -324,24 +324,27 @@ var slider = new Slider(sliderEl);
 
 // ------------------ Demo stuff ------------------------ //
 
-var timer = 0;
 
-function autoSlide() {
-    requestAnimationFrame(function() {
-        slider.next();
-    });
 
-    timer = setTimeout(autoSlide, 5000);
-}
+$(function(){
+    var timer = 0;
+    function autoSlide() {
+        requestAnimationFrame(function() {
+            slider.next();
+        });
 
-function stopAutoSlide() {
-    clearTimeout(timer);
+        timer = setTimeout(autoSlide, 5000);
+    }
 
-    this.removeEventListener('touchstart', stopAutoSlide);
-    this.removeEventListener('mousemove', stopAutoSlide);
-}
+    function stopAutoSlide() {
+        clearTimeout(timer);
 
-sliderEl.addEventListener('mousemove', stopAutoSlide);
-sliderEl.addEventListener('touchstart', stopAutoSlide);
+        this.removeEventListener('touchstart', stopAutoSlide);
+        this.removeEventListener('mousemove', stopAutoSlide);
+    }
 
-timer = setTimeout(autoSlide, 2000);
+    sliderEl.addEventListener('mousemove', stopAutoSlide);
+    sliderEl.addEventListener('touchstart', stopAutoSlide);
+
+    timer = setTimeout(autoSlide, 2000);
+})
