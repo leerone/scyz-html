@@ -9,7 +9,9 @@
 <link href="css/style.css" rel="stylesheet" type="text/css"> 
 <link href="css/font-awesome.css" rel="stylesheet" type="text/css"> 
 <link href="css/animate.css" rel="stylesheet" type="text/css">
- 
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+
 <!--[if lt IE 9]>
     <script src="js/respond-1.1.0.min.js"></script>
     <script src="js/html5shiv.js"></script>
@@ -54,18 +56,67 @@
 <!--Hero_Section-->
 <section id="hero_section" class="top_cont_outer">
     <div class="hero_wrapper">
-        <div class="container">
-            <div class="hero_section">
-                <div class="row">
-                    <div class="col-lg-5 col-sm-7">
-                        <div class="top_left_cont zoomIn wow animated"> 
-                            <h2>永忠工程 <strong>行业领导</strong> </h2>专业技术团队</h2>
-                            <p>四川省永忠工程管理有限公司是一家集建筑设计、工程造价、工程咨询等综合性业务为一体的项目管理企业。公司拥有一支精于心、践于行，想干事，能干事，能干成事的专业技术团队。</p>
-                            <a href="#service" class="read_more2">更多</a> 
+        <div class="htmleaf-container">
+            <div class="slider" id="slider" style="--img-prev:url(img/1.jpg)"> 
+                <div class="slider__content" id="slider-content">
+                    <div class="slider__images">
+                        <div class="slider__images-item slider__images-item--active" data-id="1"><img src="img/1.jpg"/>
+                        </div>
+                        <div class="slider__images-item" data-id="2"><img src="img/2.jpg"/></div>
+                        <div class="slider__images-item" data-id="3"><img src="img/3.jpg"/></div>
+                    </div>
+                    <div class="slider__text">
+                        <div class="slider__text-item slider__text-item--active" data-id="1">
+                            <div class="slider__text-item-head">
+                                <h3>技术</h3>
+                            </div>
+                            <div class="slider__text-item-info">
+                                <p>以客户为中心</p>
+                            </div>
+                        </div>
+                        <div class="slider__text-item" data-id="2">
+                            <div class="slider__text-item-head">
+                                <h3>人才</h3>
+                            </div>
+                            <div class="slider__text-item-info">
+                            <p>
+                                以奋斗者为本
+                            </p>
+                            </div>
+                        </div>
+                        <div class="slider__text-item" data-id="3">
+                            <div class="slider__text-item-head">
+                                <h3>价值</h3>
+                            </div>
+                            <div class="slider__text-item-info">
+                            <p>
+                                以结果为导向
+                            </p>
+                            </div>
                         </div>
                     </div>
-                <div>
-                <img src="img/mainImg.png" class="bannerImg zoomIn wow animated" alt="" style="top:60px"/>
+                </div>
+                <div class="slider__nav">
+                    <div class="slider__nav-arrows">
+                        <div class="slider__nav-arrow slider__nav-arrow--left" id="left">
+                            to left
+                        </div>
+                        <div class="slider__nav-arrow slider__nav-arrow--right" id="right">
+                            to right
+                        </div>
+                    </div>
+                    <div class="slider__nav-dots" id="slider-dots">
+                        <div class="slider__nav-dot slider__nav-dot--active" data-id="1">
+                            
+                        </div>
+                        <div class="slider__nav-dot" data-id="2">
+                            
+                        </div>
+                        <div class="slider__nav-dot" data-id="3">
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -749,9 +800,8 @@
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="js/jquery.isotope.js"></script>
 <script type="text/javascript" src="js/wow.js"></script> 
- <script src="contact/jqBootstrapValidation.js"></script>
- <script src="contact/contact_me.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
+<script src="js/index.js"></script>
 
 </body>
 </html>
