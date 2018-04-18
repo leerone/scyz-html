@@ -154,6 +154,7 @@ p {
 .navStyle ul li {
     display: inline-block;
     margin: 0 5px;
+    position: relative;
 }
 
 .navStyle ul li:first-child {
@@ -187,6 +188,40 @@ p {
     text-decoration: none;
     color: #005490;
     background-color: transparent;
+}
+
+/* 二级菜单 */
+.navStyle ul li ul.sub-nav {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 280px;
+    background: #ccc;
+    opacity: 0.8;
+    overflow: hidden;
+    margin-left: -80px;
+    border-radius: 5px;
+    display: none;
+}
+
+.navStyle ul li ul.sub-nav li{
+    margin: 0;
+    margin-bottom: -1px;
+    text-align: center;
+    width: 50%;
+    float: left;
+    line-height: 50px;
+}
+
+.navStyle ul li ul.sub-nav li a {
+    display: block;
+    line-height: 50px;
+    color: #000;
+    font-size: 14px;
+}
+
+.navStyle ul li ul.sub-nav li a:hover {
+    color: #005490;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover,
