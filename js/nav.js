@@ -6,4 +6,8 @@ $(function() {
 	}, function() {
 		$(this).find('ul.sub-nav').slideUp();
 	});
+
+	$('#mainNav li.item ul.sub-nav li a').click(function(){
+		window.location.href = $(this).attr('href');
+	});
 });

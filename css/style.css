@@ -517,7 +517,10 @@ a.contact_btn:hover {
     background: transparent;
 }
 
-
+/* 自定义容器宽度 */
+.container.w {
+    width: 90%;
+}
 
 /* Portfolio
 ---------------------------------*/
@@ -697,7 +700,7 @@ img {
 }
 
 .page_section.hr {
-    padding: 60px 0;
+    padding: 30px 0;
 }
 
 .page_section.team {
@@ -1488,7 +1491,7 @@ img {
 
 
 .news_section {
-    padding: 60px 0;
+    padding: 20px 0;
 }
 
 /* Portfolio FullScreen Expander */
@@ -1755,7 +1758,7 @@ display: inherit;
 
 /*jobs*/
 .jobs{
-    margin-bottom: 60px
+    margin-bottom: 0px
 }
 .jobs{
     margin-top: 50px
