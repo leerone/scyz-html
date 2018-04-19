@@ -18,35 +18,38 @@
 .jobs{
     margin-top: 50px
 }
-.table tr{
+
+.hr-table tr{
 
     -webkit-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
     -ms-transition: all 0.1s ease-in-out;
     -o-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
+    width: 100%;
+    text-align: center;
 }
-.table tr.hide-jobs{
+.hr-table tr.hide-jobs{
     display: none;
 }
-.table tr td h4{
+.hr-table tr td h4{
     font-weight: 700;
     text-transform: capitalize;
 }
-.table tr td{
+.hr-table tr td{
     padding:6px;
 }
-.table tr td h4 span{
+.hr-table tr td h4 span{
     font-weight: 300;
     font-size: 14px
 }
-.table tr td p i{
+.hr-table tr td p i{
     color: #00AEEF
 }
-.table tr td p{
+.hr-table tr td p{
     font-size: 13px
 }
-.table tr td a{
+.hr-table tr td a{
     color: #fff;
     background: #00AEEF;
     padding:12px 15px;
@@ -60,35 +63,55 @@
     -o-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
 }
-.table tr:hover td a{
+.hr-table tr:hover td a{
     background: #0486B7
 }
-.table tr:hover td a:hover{
+.hr-table tr:hover td a:hover{
     background: #fff;
     color: #00AEEF
 }
-.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
+.hr-table > thead > tr > th, .hr-table > tbody > tr > th, .hr-table > tfoot > tr > th, .hr-table > thead > tr > td, .hr-table > tbody > tr > td, .hr-table > tfoot > tr > td{
     border-top: 0px;
     vertical-align: middle;
     padding: 15px
 }
-.table > tbody > tr > td.tbl-logo{
-    padding-right: 0px
+.hr-table > tbody > tr > td.tbl-logo{
+    padding-right: 5px;
+    width: 50px;
+    height: 50px;
+    width: 5%;
 }
-.table > tbody > tr > td.tbl-apply{
-    padding-right: 10px;
-    padding-left: 0px;
+.hr-table > tbody > tr > td.tbl-title{
+    padding-left: 50px;
+    width: 15%;
 }
-.table > tbody > tr > td.tbl-title{
-    padding-left: 5px
+.hr-table > tbody > tr > td.tbl-desc{
+    padding-left: 5px;
+    width: 30%;
 }
-.table tr.odd{
+.hr-table > tbody > tr > td.tbl-address{
+    padding-left: 5px;
+    width: 20%;
+}
+.hr-table > tbody > tr > td.tbl-number{
+    padding-left: 5px;
+    width: 5%;
+}
+.hr-table > tbody > tr > td.tbl-price{
+    padding-left: 5px;
+    width: 5%;
+}
+.hr-table > tbody > tr > td.tbl-apply{
+    padding-left: 5px;
+    width: 20%;
+}
+.hr-table tr.odd{
     background: #F9F9F9
 }
-.table tr.even{
+.hr-table tr.even{
     background: #F4FFFF
 }
-.table tr:hover{
+.hr-table tr:hover{
     background: #00AEEF;
     color: #fff
 }
