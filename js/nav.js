@@ -42,7 +42,9 @@ $(function() {
 		$(self).find('ul.sub-nav').slideUp();
 	});
 
-	$('#mainNav li.item ul.sub-nav li a').click(function(){
-		window.location.href = $(this).attr('href');
+	$('#mainNav li.item ul.sub-nav li a').click(function() {
+        var url = $(this).data('src');
+        if (!url) return;
+		window.location.href = url;
 	});
 });
