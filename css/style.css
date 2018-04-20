@@ -990,7 +990,9 @@ img {
 ---------------------------------*/
 
 .footer_wrapper {
-    background: #232323;
+    /*background: #232323;*/
+    background: url(../img/bg-wall2.jpg) no-repeat scroll 0 0;
+    background-size: 100% 100%;
 }
 
 .footer_bottom {
