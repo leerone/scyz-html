@@ -265,6 +265,7 @@ p {
 .top_cont_outer {
     background: #005490;
     position: relative;
+    overflow: hidden;
 }
 
 .hero_section {
