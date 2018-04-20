@@ -156,6 +156,11 @@
         },*/
 
         handleClick: function (e) {
+            /* add by chenlilang */
+            var src = $(e.target).data('src');
+            if (src) return;
+            /* ------------- */
+
             var self = this;
             var $link = $(e.currentTarget);
             var $parent = $link.parent();
