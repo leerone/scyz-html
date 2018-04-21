@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+    <link href="css/hr/style.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.js"></script>
+    <script type="text/javascript" src="js/wow.js"></script>
+</head>
+
+<body>
+
+    <section class="page_section zuzhi" id="zuzhi">
+        <div class="structure">
+            <h2>组织架构</h2>
+            <p>
+                公司秉承“以人为本，诚信创新”的经营理念，以人才和创新为核心竞争力，与广大客户建立起长期稳定的合作关系。在完善的管理制度和质量控制体系保障下，公司遵照“专业、诚信、高效、创新”的企业精神，以“为客户创造价值，为社会创造财富，为员工创造机遇”为企业使命，追求卓越，勤勉探索，为争做行业领先品牌不断进取。
+            </p>
+            <img src="./img/structure.png" />
+        </div>
+    </section>
+
+</body>
+
+<script>
+    $(function() {
+        var $container = $('.isotope').isotope({
+            itemSelector: '.element-item',
+            layoutMode: 'fitRows',
+        });
+        
+        $('#filters').on('click', 'a', function() {
+            var filterValue = $(this).attr('data-filter');
+            $container.isotope({ filter: filterValue });
+        });
+    });
+</script>
+
+</html>
