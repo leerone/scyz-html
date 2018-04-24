@@ -43,7 +43,7 @@
                     <div id="main-nav" class="collapse navbar-collapse navStyle">
                         <ul class="nav navbar-nav" id="mainNav">
                             <li class="item active">
-                                <a href="#hero_section" class="scroll-link">首页</a>
+                                <a href="index.html" class="scroll-link">首页</a>
                             </li>
                             <li class="item">
                                 <a href="#aboutUs" class="scroll-link">关于我们</a>
@@ -249,6 +249,36 @@
             window.location.href = "index.html";
             return;
         }
+
+        $('#mainNav li.item').removeClass('active');
+        switch(mod) {
+            case 'aboutusCorp':
+            case 'aboutusCultrue':
+            case 'team':
+            case 'aboutusAptitude':
+            case 'aboutusActive':
+            case 'aboutusPublic':
+            case 'aboutusHonor':
+                $('#mainNav li.item:eq(1)').addClass('active');
+            break;
+
+            case 'case':
+                $('#mainNav li.item:eq(3)').addClass('active');
+            break;
+
+            case 'newsQiye':
+            case 'newsHangye':
+            case 'newsBiao':
+            case 'newsTongzhi':
+                $('#mainNav li.item:eq(4)').addClass('active');
+            break;
+
+            case 'hrZHaopin':
+            case 'hrZuzhi':
+                $('#mainNav li.item:eq(5)').addClass('active');
+            break;
+        }
+
         var url = mod.toLowerCase() + '.html';
         $("iframe.content-box").attr('src', url).load(function() {
             var h = $(this).contents().find('body').height();
