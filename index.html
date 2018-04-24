@@ -21,13 +21,49 @@
     <style>
         body {
             /*background-image: -webkit-cross-fade(url(img/bg-wall.jpg), url(img/bg-wall.jpg), 0.3);*/
-            background-image: url(img/bg-wall.jpg);
+            /*background-image: url(img/bg-wall.jpg);
             background-repeat: repeat-y;
             background-size: 100% auto;
-            font-family:"Microsoft Yahei"; 
+            font-family:"Microsoft Yahei"; */
+            /*background-color: #005490;*/
         }
         .cus-color {
             color: #fff;
+        }
+        .our-value {
+            width: 100%;
+            height: 360px;
+            background-color: #005490;
+            box-shadow: 0 0 150px 1px #005490;
+            position: relative;
+        }
+        .our-value .v {
+            font-size: 32px;
+            width: 32px;
+            word-break: break-all;
+            color: #fff;
+            position: absolute;
+        }
+        .our-value .v1 {
+            bottom: 20px;
+            left: 80px;
+        }
+        .our-value .v2 {
+            bottom: 40px;
+            left: 170px;
+        }
+        .our-value .v3 {
+            bottom: 60px;
+            left: 260px;
+        }
+        .small-line {
+            height: 1px;
+            width: 120px;
+            background: #fff;
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 30px;
         }
     </style>
 </head>
@@ -164,18 +200,29 @@
         </div>
     </section>
     <!--Hero_Section-->
-    <section id="aboutUs">
+    <section id="aboutUs" style="background-color: #000;">
         <!--Aboutus-->
         <div class="inner_wrapper">
             <div class="container w">
-                <h2 class="cus-color">关于我们</h2>
+                <h2 class="cus-color">
+                    关于我们<br/>
+                    <span style="font-family: Raleway; font-weight: normal;">
+                    Who We Are?</span>
+                    <div class="small-line"></div>
+                </h2>
                 <div class="inner_section">
                     <div class="row">
-                        <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right"><img src="img/about-img.jpg" class="img-circle delay-03s animated wow zoomIn" alt="">
+                        <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right">
+                            <!-- <img src="img/about-img.jpg" class="img-circle delay-03s animated wow zoomIn" alt=""> -->
+                            <div class="our-value">
+                                <div class="v v1">以客户为中心</div>
+                                <div class="v v2">以奋斗者为本</div>
+                                <div class="v v3">以结果为导向</div>
+                            </div>
                         </div>
                         <div class=" col-lg-7 col-md-7 col-sm-7 col-xs-12 pull-left">
                             <div class=" delay-01s animated fadeInDown wow animated">
-                                <h3 class="cus-color">&nbsp;&nbsp;&nbsp;&nbsp;四川省永忠工程管理有限公司是一家集建筑设计、工程造价、工程咨询等综合性业务为一体的项目管理企业。公司拥有一支精于心、践于行，想干事，能干事，能干成事的专业技术团队。</h3>
+                                <h3 class="cus-color" style="line-height: 30px;">&nbsp;&nbsp;&nbsp;&nbsp;四川省永忠工程管理有限公司是一家集建筑设计、工程造价、工程咨询等综合性业务为一体的项目管理企业。公司拥有一支精于心、践于行，想干事，能干事，能干成事的专业技术团队。</h3>
                                 <br/>
                                 <p class="cus-color">公司现有员工80余人，其中国家注册设计师18人、注册造价师10人、注册咨询师6人，中级以上 专业技术职称人员16人，高级职称5人。公司成立6年来，本着立足川内，扎根高原，服务社会为宗旨，公司业务遍及四川、西藏等30余个县市区，先后完成设计项目1000余个，可研项目450余个，财评项目900余个，审计项目600余个。公司通过在项目实施中不断的学习、探索、实践，积累了成熟的项目管理经验，获得了“甘孜州财评协作优秀单位”称号。</p>
                                 <br/>
@@ -237,7 +284,7 @@
     </section>
     <!--Service-->
     <!-- Portfolio -->
-    <section id="Portfolio" class="content">
+    <section id="Portfolio" class="content art-bg">
         <!-- Container -->
         <div class="container portfolio_title">
             <!-- Title -->
@@ -401,13 +448,13 @@
         </div>
     </section>
     <!--/Portfolio -->
-    <section class="news_section" id="news">
+    <section id="news" class="news_section" >
         <!--page_section-->
         <div class="container w">
             <div class="heading text-center">
                 <!-- Heading -->
                 <h2 class="cus-color">新闻动态</h2>
-                <a href="news.html" class="contact_btn" style="border: 1px solid blue; width: 100px; height: auto;left: 50%;margin-left: -50px;
+                <a href="detail.html?mod=newsQiye" class="contact_btn" style="border: 1px solid blue; width: 100px; height: auto;left: 50%;margin-left: -50px;
                     position: relative;cursor: pointer">更多新闻
             </a>
                 <br/>
@@ -541,7 +588,7 @@
     </section>
     <!--client_logos-->
     <!-- 招贤纳士 start-->
-    <section class="page_section hr" id="hr">
+    <section id="hr" class="page_section art-bg hr" >
         <div class="container w">
             <h2 class="cus-color">招贤纳士</h2>
             <div class="row page-title text-center wow bounce" data-wow-delay="1s">

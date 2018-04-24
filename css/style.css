@@ -727,6 +727,13 @@ img {
     padding: 60px 0;
 }
 
+.art-bg {
+    background-image: url(../img/bg-wall.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family:"Microsoft Yahei";
+}
+
 .img-circle {
     border-radius: 0%;
 }
@@ -1495,6 +1502,7 @@ img {
 
 .news_section {
     padding: 20px 0;
+    background-color: #323232;
 }
 
 /* Portfolio FullScreen Expander */
