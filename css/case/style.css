@@ -177,5 +177,14 @@ figure.effect-moses:hover img {
 	opacity: 0.6;
 }
 
+.active-list > li{
+	padding: 20px;
+}
+
+.aboutus-corp , .aboutus-cultrue , .aboutus-zizhi{
+	padding: 50px;
+}
+
+
 /*---------------*/
 /*-- //services --*/
