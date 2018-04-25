@@ -6,11 +6,14 @@
     <title></title>
     <!--引用百度地图API-->
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=CE2ed269a317ab23b94d64a4fb5a9f61"></script>
+
+
 </head>
 
-<body>
+<body style="margin: 0px;display: block">
     <!--百度地图容器-->
-    <div style="width:1920px;height:300px;border:#ccc solid 1px;font-size:12px" id="map"></div>
+    <div style="width:1920px;height:665px;border:#ccc solid 0px;font-size:12px" id="map"></div>
+
 </body>
 <script type="text/javascript">
 //创建和初始化地图函数：
@@ -23,7 +26,7 @@ function initMap() {
 
 function createMap() {
     map = new BMap.Map("map");
-    map.centerAndZoom(new BMap.Point(103.961525, 30.6914), 18);
+    map.centerAndZoom(new BMap.Point(103.959825, 30.6914), 18);
 }
 
 function setMapEvent() {
