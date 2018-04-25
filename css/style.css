@@ -2396,3 +2396,176 @@ display: inherit;
     background-image: linear-gradient(to left, rgba(0, 0, 0, 0.9) 0, transparent 100%);
   }
 }
+
+/* 客服挂件 */
+.fk-toolArea {
+    width: 80px;
+    height: 240px;
+    font-size: 0;
+    text-align: center;
+    z-index: 99;
+    right: 20px;
+    position: fixed;
+    top: 50%;
+    margin-top: -40px;
+    right: 0px;
+}
+ul.f-toolList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.fk-toolArea .f-toolAskItem {
+    position: relative;
+}
+.fk-toolArea .f-toolItem {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+    margin-bottom: 14px;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
+    position: relative;
+    background: #fff;
+}
+.fk-toolArea .f-toolAskItem {
+    width: 79px;
+    height: 79px;
+    margin: 0;
+    margin-bottom: 20px;
+    background: url(../img/home_ico.png) no-repeat -1505px -90px;
+    /*cursor: pointer;*/
+}
+.fk-toolArea .f-toolBlock {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.fk-toolArea .f-icon {
+    width: 20px;
+    height: 20px;
+    background: url(../img/home_ico.png) no-repeat -498px -1080px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+    display: block;
+}
+.fk-toolArea .f-icon-ask {
+    width: 30px;
+    height: 30px;
+    margin-left: -15px;
+    margin-top: -15px;
+    background-position: -428px -1075px;
+}
+.fk-toolArea .f-toolAskItem.left .f-subArea, .fk-toolArea .f-toolAskItem.left:hover .f-subArea {
+    left: -12px;
+}
+.fk-toolArea .f-toolAskItemHover .fk-ask-panelWrap, .fk-toolArea .f-toolAskItemUnHover .fk-ask-panelWrap {
+    position: absolute;
+    left: -174px;
+    top: 0;
+    display: block;
+    font-size: 14px;
+    overflow: hidden;
+    width: 182px;
+    height: 330px;
+    padding: 8px 0;
+    margin: -8px;
+}
+.fk-toolArea .f-toolAskItem.left .fk-ask-panelWrap {
+    transition: all .3s;
+    left: 0;
+    width: 0;
+    padding: 8px 0;
+}
+.fk-ask-panel {
+    width: 182px;
+    background: #fff;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 4;
+    font-family: "微软雅黑";
+}
+.fk-ask-panel {
+    width: 182px;
+    background: #fff;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 4;
+    font-family: "微软雅黑";
+}
+.fk-toolArea .f-toolAskItemHover .fk-ask-panel {
+    transition: all .3s .01s;
+}
+.fk-ask-panel .f-ask-telWrap {
+    height: 56px;
+    background: url(../img/home_ico.png) no-repeat -296px -1236px;
+    text-align: center;
+    color: #fff;
+    padding-top: 10px;
+    cursor: default;
+}
+.fk-ask-panel .fk-icon {
+    width: 30px;
+    height: 30px;
+    background: url(../img/home_ico.png) no-repeat -297px -1077px;
+}
+.fk-ask-panel .f-tel-txtWrap, .fk-ask-panel .fk-icon-tel, .fk-ask-panel .fk-icon-wx, .fk-ask-panel .f-qq-txtWrap {
+    display: inline-block;
+    _zoom: 1;
+    vertical-align: middle;
+    width: auto;
+    text-align: left;
+}
+.fk-ask-panel .f-tel-txtWrap .f-txt {
+    font-size: 16px;
+    line-height: 1;
+}
+.fk-ask-panel .f-tel-txtWrap .f-tel {
+    font-size: 14px;
+    line-height: 1;
+    padding-top: 8px;
+}
+.fk-ask-panel .f-ask-qqWrap {
+    padding-bottom: 14px;
+}
+.fk-ask-panel .f-qq-hd {
+    padding-top: 30px;
+    font-size: 18px;
+    color: #4ca5ee;
+    padding-bottom: 25px;
+    text-align: center;
+    cursor: default;
+}
+.fk-ask-panel .fk-icon {
+    width: 30px;
+    height: 30px;
+    background: url(../img/home_ico.png) no-repeat -297px -1077px;
+}
+.fk-ask-panel .fk-icon-wx {
+    background-position: -356px -1075px;
+    width: 33px;
+    height: 33px;
+}
+.fk-ask-panel .f-qq-list {
+    width: auto;
+}
+.fk-ask-panel .f-qq-item {
+    height: 30px;
+    line-height: 30px;
+    background: #ccc;
+    width: 100px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0 auto 16px auto;
+    overflow: hidden;
+    background: #4fbce8;
+    color: #fff;
+    display: block;
+}
