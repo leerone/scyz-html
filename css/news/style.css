@@ -24,13 +24,14 @@ h3.title-head {
     border: none;
 }
 .article-left {
-    width: 50%;
+    width: 20%;
     float: left;
-	margin-right:3%;
+    margin-right: 3%;
+    margin-left: 10%;
 }
 .article-right {
     float: right;
-    width: 47%;
+    width: 60%;
 }
 .article-left img {
     width: 100%;
