@@ -47,4 +47,23 @@ $(function() {
         if (!url) return;
 		window.location.href = url;
 	});
+
+    /*
+     * 客服挂件
+     **/
+     $('.f-toolList li.f-toolItem').hover(function() {
+        $(this).find('.f-subArea .fk-ask-panelWrap').css({
+            width: '182px',
+            left: '-174px'
+        });
+     }, function() {
+        $(this).find('.f-subArea .fk-ask-panelWrap').css({
+            width: 0,
+            left: 0
+        });
+     });
+
+     $("#faiscoService").Tdrag({
+        scope: 'body'
+     });
 });
