@@ -32,8 +32,8 @@ $(function() {
 	$('#mainNav li.item').hover(function() {
 		var self = this;
 		enterTimer = setTimeout(function() {
-			$('#mainNav li.item').removeClass('active');
-			$(self).addClass('active');
+			//$('#mainNav li.item').removeClass('active');
+			//$(self).addClass('active');
 			$(self).find('ul.sub-nav').slideDown();
 		}, 200);
 	}, function() {
