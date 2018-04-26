@@ -185,7 +185,9 @@ figure.effect-moses:hover img {
 	padding: 50px;
 }
 
-
+.member-social-link {
+	display: none;
+}
 
 /*---------------*/
 /*-- //services --*/

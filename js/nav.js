@@ -42,7 +42,7 @@ $(function() {
 		$(self).find('ul.sub-nav').slideUp();
 	});
 
-	$('#mainNav li.item ul.sub-nav li a, .item_info a, #news a, .more-jobs a').click(function() {
+	$('#mainNav li.item ul.sub-nav li a, .item_info a, #news a, .more-jobs a, .menu-course a').click(function() {
         var url = $(this).data('src');
         if (!url) return;
 		window.location.href = url;
