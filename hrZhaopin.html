@@ -574,6 +574,8 @@ $(function() {
 
     $('#filters').on('click', 'a', function() {
         var filterValue = $(this).attr('data-filter');
+        $('#filters ul li a').removeClass('active');
+        $(this).addClass('active');
         $container.isotope({ filter: filterValue });
     });
 });
