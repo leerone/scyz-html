@@ -2201,6 +2201,8 @@ display: inherit;
   margin: 0;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
+  /* 取消右下角文字 */
+  visibility: hidden; 
 }
 .slider__text-item-head {
   top: -0.5em;
