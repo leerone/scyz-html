@@ -279,13 +279,14 @@
 <script type="text/javascript">
     $(function() {
         var mod = $.getURLParam("mod");
-        if (!mod) {
+        if (!mod || mod.indexOf('#') > -1) {
             window.location.href = "index.html";
             return;
         }
 
         $('#mainNav li.item').removeClass('active');
         var cbox = $('iframe.content-box');
+        cbox.css({padding: 0});
         switch(mod) {
             case 'aboutusCorp':
             case 'aboutusCultrue':
