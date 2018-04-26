@@ -4,10 +4,12 @@
     padding: 0px 0 5em 0;
 }
 h3.title-head {
-    font-size: 2.5em;
+    /*font-size: 2.5em;*/
     color: #3367D6;
     padding: 5px 10px 7px;
 	text-transform: Capitalize;
+    font: initial;
+    font-size: 1.9em;
 }
 .articles header {
     border-bottom: 1px solid #3367D6;
