@@ -8,3 +8,9 @@ div.aboutus-title {
 .aboutus-content {
 	text-indent:2em;	
 }
+
+section#honor.page_section.honor {
+	padding: 50px;
+}
+
+
