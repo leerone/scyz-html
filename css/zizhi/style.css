@@ -1,0 +1,11 @@
+.img-body {
+	width: 450px;
+	margin:0 auto;
+}
+
+h4.panel-title > a {
+	display: block;
+	width: 100%;
+	height: 37px;
+	line-height: 37px;
+}
