@@ -64,7 +64,8 @@
     transition: all 0.1s ease-in-out;
 }
 .hr-table tr:hover td a{
-    background: #0486B7
+    background: #0486B7;
+    cursor: pointer;
 }
 .hr-table tr:hover td a:hover{
     background: #fff;
@@ -160,3 +161,4 @@
 .structure > .img {
   text-align: center;
 }
+

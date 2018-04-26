@@ -1,0 +1,15 @@
+.aboutus-cultrue > .aboutus-content {
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 16px;
+}
+
+.cultruecls {
+	margin-top: 20px;
+}
+
+.cultruecls .first {
+    background-color: #ccc;
+    padding: 5px;
+    margin: 5px;
+}
