@@ -18,7 +18,7 @@
     <style type="text/css">
         .content-box {
             width: 100%;
-            min-height: 664px;
+            min-height: 750px;
         }
     </style>
 </head>
@@ -60,8 +60,9 @@
                             <li class="item">
                                 <a href="#Portfolio" class="scroll-link">项目案例</a>
                                 <ul class="sub-nav">
-                                    <li><a href="javascript:void(0)" data-src="detail.html?mod=case">教育建筑</a></li>
-                                    <li><a href="javascript:void(0)" data-src="detail.html?mod=case">医疗卫生建筑</a></li>
+                                    <li><a href="javascript:void(0)" data-src="detail.html?mod=case&casetype=qita">公共建筑</a></li>
+                                    <li><a href="javascript:void(0)" data-src="detail.html?mod=case&casetype=jiaoyu">教育建筑</a></li>
+                                    <li><a href="javascript:void(0)" data-src="detail.html?mod=case&casetype=yiliao">医疗卫生建筑</a></li>
                                 </ul>
                             </li>
                             <li class="item">
@@ -279,6 +280,7 @@
 <script type="text/javascript">
     $(function() {
         var mod = $.getURLParam("mod");
+        var casetype = $.getURLParam("casetype");
         if (!mod || mod.indexOf('#') > -1) {
             window.location.href = "index.html";
             return;
@@ -323,13 +325,19 @@
                 cbox.attr('id', 'exch');
             break;
         }
-
-        var url = mod.toLowerCase() + '.html';
-        $("iframe.content-box").attr('src', url).load(function() {
-            var h = $(this).contents().find('body').height();
-            $(this).height(h);
-        });
-
+        if(casetype){
+            var url = mod.toLowerCase() + '.html?casetype='+casetype;
+            $("iframe.content-box").attr('src', url).load(function() {
+                var h = $(this).contents().find('body').height();
+                $(this).height(h);
+            });
+        }else{
+            var url = mod.toLowerCase() + '.html';
+            $("iframe.content-box").attr('src', url).load(function() {
+                var h = $(this).contents().find('body').height();
+                $(this).height(h);
+            });
+        }
     });
 </script>
 </body>
