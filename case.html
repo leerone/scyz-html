@@ -35,17 +35,17 @@
                 </li> -->
 
                 <li>
-                    <a id="all" href="#" data-filter=".qita" class="active">
+                    <a id="all" class="qitacls" href="#" data-filter=".qita">
                         <h5>公共建筑</h5>
                     </a>
                 </li>
                 <li>
-                    <a id="jiaoyu" href="#" data-filter=".jiaoyu">
+                    <a class="jiaoyucls" href="#" data-filter=".jiaoyu">
                         <h5>教育建筑</h5>
                     </a>
                 </li>
                 <li>
-                    <a id="yiliao" href="#" data-filter=".yiliao">
+                    <a class="yiliaocls" href="#" data-filter=".yiliao">
                         <h5>医疗卫生建筑</h5>
                     </a>
                 </li>
@@ -258,9 +258,12 @@
         var casetype = $.getURLParam("casetype");
         $('.clearfix li a').removeClass('active');
 
-        setTimeout(function(){
+        /*setTimeout(function(){
             $('#'+casetype).trigger('click')
-        },100)
+        },100)*/
+        $('#all').removeAttr('id');
+        $('.'+casetype+'cls').attr('id','all');
+
         
     });
 </script>
