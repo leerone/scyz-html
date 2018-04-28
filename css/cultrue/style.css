@@ -10,6 +10,19 @@
 
 .cultruecls .first {
     background-color: #F7F8F9;
-    padding: 5px;
-    margin: 5px;
+    
 }
+
+.cultruecls .row{
+	margin-top: 50px;
+	margin-left: 15%;
+}
+
+.cultruecls .row .coldiv {
+	height: 200px;
+	background-color: #F7F8F9;
+	padding: 20px;
+    margin: 20px;
+
+}
+
