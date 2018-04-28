@@ -65,6 +65,7 @@ body {
     font-weight: normal;
     color: #888888;
     margin: 0;
+    overflow-x: hidden;
 }
 
 h2 {
@@ -807,14 +808,18 @@ img {
 }
 
 .contact_section {
-    margin: 20px 0 60px 0;
+    margin: 20px 0 0px 0;
 }
 
 .contact_section h2 {
     font-size: 40px;
-    color: #ffffff;
+    color: #20ade5;
     margin: 0 0 50px 0;
     text-transform: uppercase;
+}
+
+.footerbottom h4 {
+    color: #20ade5
 }
 
 .contact_block {
@@ -1011,12 +1016,12 @@ img {
 
 .footer_wrapper {
     /*background: #232323;*/
-    background: url(../img/bg-wall2.jpg) no-repeat scroll 0 0;
+    /*background: url(../img/bg-wall2.jpg) no-repeat scroll 0 0;*/
     background-size: 100% 100%;
 }
 
 .footer_bottom {
-    border-top: 1px solid #3C3A3A;
+    border-top: 1px solid #ccc;
     padding: 25px 0;
 }
 
