@@ -18,7 +18,22 @@
     <![endif]-->
     <style>
         .unify-bg {
-            background-color: #0076ff;
+            /*background-color: #0076ff;*/
+            background: url(img/bg-wall3.jpg);
+            background-repeat: repeat-y;
+            background-size: 100% 100%;
+        }
+        .aboutus-bg {
+            background: url(img/bg-wall-aboutus.jpg);
+            background-size: 100% 621px;
+        }
+        .case-bg {
+            background: url(img/bg-wall-case-half.jpg) no-repeat scroll 0 0;
+            background-size: 100% 210px
+        }
+        .gradient-bg {
+            background: -webkit-linear-gradient(right top, #87e5ff, #4385ff);
+            background: linear-gradient(right top, #87e5ff, #4385ff);
         }
         .cus-color {
             color: #fff;
@@ -259,6 +274,50 @@
                 </div>
             </div>
         </div>
+        <!-- Container -->
+        <div id="Portfolio" class="container portfolio_title">
+            <!-- Title -->
+            <div class="section-title">
+                <div class="small-line"></div>
+                <h2 style="color: #fff;">项目案例</h2>
+            </div>
+            <!--/Title -->
+        </div>
+        <div id="filters" class="sixteen columns">
+            <ul class="clearfix">
+                <li>
+                    <a id="all" href="#" data-filter="*" class="active">
+                        <h5>全部</h5>
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="#" data-filter=".jiaoyu">
+                        <h5>教育建筑</h5>
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="#" data-filter=".yiliao">
+                        <h5>医疗卫生建筑</h5>
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="#" data-filter=".qita">
+                        <h5>其他公共建筑</h5>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a class="" href="#" data-filter=".appleIOS">
+                        <h5>川中地区</h5>
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="#" data-filter=".web">
+                        <h5>川外地区</h5>
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+        <!-- Container -->
     </section>
     <!--Aboutus-->
     <!--Service-->
@@ -306,54 +365,11 @@
     </section> -->
     <!--Service-->
     <!-- Portfolio -->
-    <section id="Portfolio" class="content unify-bg">
-        <!-- Container -->
-        <div class="container portfolio_title">
-            <!-- Title -->
-            <div class="section-title">
-                <div class="small-line"></div>
-                <h2 style="color: #fff;">项目案例</h2>
-            </div>
-            <!--/Title -->
-        </div>
-        <!-- Container -->
+    <section class="content">
         <div class="portfolio-top"></div>
         <!-- Portfolio Filters -->
         <div class="portfolio">
-            <div id="filters" class="sixteen columns">
-                <ul class="clearfix">
-                    <li>
-                        <a id="all" href="#" data-filter="*" class="active">
-                            <h5>全部</h5>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="" href="#" data-filter=".jiaoyu">
-                            <h5>教育建筑</h5>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="" href="#" data-filter=".yiliao">
-                            <h5>医疗卫生建筑</h5>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="" href="#" data-filter=".qita">
-                            <h5>其他公共建筑</h5>
-                        </a>
-                    </li>
-                    <!-- <li>
-                        <a class="" href="#" data-filter=".appleIOS">
-                            <h5>川中地区</h5>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="" href="#" data-filter=".web">
-                            <h5>川外地区</h5>
-                        </a>
-                    </li> -->
-                </ul>
-            </div>
+            
             <!--/Portfolio Filters -->
             <!-- Portfolio Wrapper -->
             <div class="isotope fadeInLeft animated wow" style="position: relative; overflow: hidden; height: 480px;" id="portfolio_wrapper">

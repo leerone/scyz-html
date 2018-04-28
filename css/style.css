@@ -540,7 +540,7 @@ a.contact_btn:hover {
 ---------------------------------*/
 
 #Portfolio {
-    padding: 0px 0px 60px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 .Portfolio-nav {
@@ -737,7 +737,7 @@ img {
 }
 
 #aboutUs {
-    padding: 60px 0;
+    padding: 60px 0 1px 0;
 }
 
 .art-bg {
