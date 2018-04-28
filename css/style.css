@@ -103,7 +103,8 @@ p {
 ---------------------------------*/
 
 #header_wrapper {
-    background: #293c55;
+    /*background: #293c55;*/
+    background: #0076ff;
     padding: 20px 0px;
 }
 
@@ -149,12 +150,14 @@ p {
 .navStyle ul {
     list-style: none;
     padding: 0px;
+    border: 0;
 }
 
 .navStyle ul li {
     display: inline-block;
     margin: 0 5px;
     position: relative;
+    border: 0;
 }
 
 .navStyle ul li:first-child {
@@ -168,6 +171,7 @@ p {
 
 .navStyle ul li a {
     display: block;
+    border: 0;
     font-size: 14px;
     color: #222222;
     font-family: '微软雅黑';
@@ -230,13 +234,20 @@ p {
     background-color: transparent;
 }
 
+.navbar-inverse .navbar-nav>li>a,
 .navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:focus {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav>li:hover>a,
 .navbar-inverse .navbar-nav>.active>a,
 .navbar-inverse .navbar-nav>.active>a:hover,
 .navbar-inverse .navbar-nav>.active>a:focus {
     color: #fff;
-    background-color: #005490;
-    border-radius: 5%;
+    /*background-color: #005490;*/
+    background-color: #59a6f3;
+    border-radius: 3px;
 }
 
 .navStyle>li.active>a,
@@ -449,7 +460,8 @@ a.read_more2:hover {
 }
 
 .inner_section {
-    padding: 60px 0 20px;
+    padding: 30px 0 20px;
+    font-size: 16px;
 }
 
 .service-list {
@@ -528,7 +540,7 @@ a.contact_btn:hover {
 ---------------------------------*/
 
 #Portfolio {
-    padding: 60px 0px;
+    padding: 0px 0px 60px 0px;
 }
 
 .Portfolio-nav {
@@ -702,7 +714,7 @@ img {
 }
 
 .page_section.hr {
-    padding: 30px 0;
+    padding: 60px 0;
 }
 
 .page_section.team {
@@ -791,11 +803,11 @@ img {
 ---------------------------------*/
 
 .page_section.contact {
-    padding: 90px 0 100px;
+    padding: 0px 0 0px;
 }
 
 .contact_section {
-    margin: 0 0 60px 0;
+    margin: 20px 0 60px 0;
 }
 
 .contact_section h2 {
