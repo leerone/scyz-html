@@ -162,3 +162,34 @@
   text-align: center;
 }
 
+.modal .modal-dialog {
+    width: 1200px;
+    margin: 30px auto;
+}
+
+/*应聘详情模态框标题*/
+.modal > .modal-dialog > .modal-content > .modal-header > .modal-title {
+    font-size: 24px;
+}
+
+/*应聘详情模态框标题*/
+.modal > .modal-dialog > .modal-content > .modal-body > .modal-hr-title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/*应聘详情模态框子标题*/
+.modal > .modal-dialog > .modal-content > .modal-body > .modal-hr-sub-title {
+    font-size: 24px;
+    font-weight: bold;
+    border-left: 10px solid #e42200;
+    padding-left: 10px;
+}
+
+/*应聘详情模态li内容*/
+.modal > .modal-dialog > .modal-content > .modal-body > li {
+    font-size: 16px;
+    padding: 5px;
+}
+
+
