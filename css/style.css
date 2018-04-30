@@ -758,12 +758,12 @@ img {
 
 .author-avatar {
     float: left;
-    max-height: 200px;
-    max-width: 200px;
+    max-height: 150px;
+    max-width: 300px;
 }
 
 .member-details {
-    padding-left: 230px;
+    padding-left: 320px;
 }
 
 .member-top {
@@ -781,6 +781,7 @@ img {
     font-size: .81em;
     color: #b2b2b2;
     letter-spacing: .4px;
+    border-bottom: 2px solid #e42200;
 }
 
 .member-social-link a {
