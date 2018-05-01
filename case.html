@@ -25,7 +25,7 @@
     <ol class="breadcrumb">
             <li><a href="index.html" id="news">首页</a></li>
             <li class="active">项目案例</li>
-        </ol>
+    </ol>
     <div id="filters" class="sixteen columns">
             <ul class="clearfix">
                 <!-- <li style="display: none;">
@@ -134,7 +134,7 @@
                     </div>
                     <div class="item_overlay">
                         <div class="item_info">
-                            <a href="jacasedanba.html">
+                            <a href="casedanba.html">
                             <h4 class="project_name">丹巴嘉绒广场</h4></a>
                         </div>
                     </div>
@@ -264,6 +264,10 @@
         $('#all').removeAttr('id');
         $('.'+casetype+'cls').attr('id','all');
 
+        $('.item_overlay').click(function() {
+            var url = $(this).find('.item_info a').attr('href');
+            window.location.href = url;
+        });
         
     });
 </script>

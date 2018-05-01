@@ -191,3 +191,18 @@ figure.effect-moses:hover img {
 
 /*---------------*/
 /*-- //services --*/
+
+.params-spliter {
+    height: 1px;
+    width: 100%;
+    background: #005490;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.params-ul {
+	padding: 0;
+}
+
