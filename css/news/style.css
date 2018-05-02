@@ -117,3 +117,8 @@ a.span_link:hover {
 .life-style-grids {
     margin-top: 2em;
 }
+
+.span_link {
+    cursor: default;
+    display: none;
+}
