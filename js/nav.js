@@ -66,4 +66,9 @@ $(function() {
      $("#faiscoService").Tdrag({
         scope: 'body'
      });
+
+     $('.item_overlay').click(function() {
+        var url = $(this).find('.item_info a').data('src');
+        window.location.href = url;
+    });
 });
