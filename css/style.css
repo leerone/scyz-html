@@ -104,9 +104,9 @@ p {
 ---------------------------------*/
 
 #header_wrapper {
-    /*background: #293c55;*/
+    background: #293c55;
     /*background: #0076ff;*/
-    background: #59a6f4;
+    /*background: #59a6f4;*/
     padding: 20px 0px;
 }
 
@@ -717,7 +717,7 @@ img {
 }
 
 .page_section.hr {
-    padding: 60px 0;
+    padding: 0px 0 60px 0;
 }
 
 .page_section.team {
@@ -1523,7 +1523,7 @@ img {
 
 
 .news_section {
-    padding: 60px 0;
+    padding: 20px 0;
     background-color: #323232;
 }
 
