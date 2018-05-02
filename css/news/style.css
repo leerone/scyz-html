@@ -9,16 +9,18 @@ h3.title-head {
     padding: 5px 10px 7px;
 	text-transform: Capitalize;
     font: initial;
-    font-size: 1.9em;
+    font-size: 1.4em;
 }
 .articles header {
     border-bottom: 1px solid #3367D6;
+    margin-bottom: 10px;
 }
 .articles {
-    margin: 0.5em 0;
+    margin-top: -10px;
 }
 .article {
 	border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
     /*margin-top: 3.5em;
     padding-bottom: 3em;*/
 }
@@ -53,7 +55,7 @@ h3.title-head {
 	-ms-transition:0.5s all;
 }
 a.title {
-    font-size: 1.9em;
+    font-size: 1.4em;
     color: #000;
 }
 a.title:hover {

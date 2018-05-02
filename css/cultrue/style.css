@@ -10,10 +10,10 @@
 
 .cultruecls .first {
     background-color: #F7F8F9;
-    
+    padding-top: 10px;
 }
 
-.cultruecls .row{
+.cultruecls .row {
 	margin-top: 50px;
 	margin-left: 15%;
 }

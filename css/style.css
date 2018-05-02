@@ -105,7 +105,8 @@ p {
 
 #header_wrapper {
     /*background: #293c55;*/
-    background: #0076ff;
+    /*background: #0076ff;*/
+    background: #59a6f4;
     padding: 20px 0px;
 }
 
@@ -247,7 +248,8 @@ p {
 .navbar-inverse .navbar-nav>.active>a:focus {
     color: #fff;
     /*background-color: #005490;*/
-    background-color: #59a6f3;
+    /*background-color: #59a6f3;*/
+    background-color: #0486b7;
     border-radius: 3px;
 }
 
