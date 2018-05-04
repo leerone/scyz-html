@@ -95,7 +95,7 @@
     <!-- <div class="services" style="margin-bottom: 20px;">
         <div class="container case-contrainer">
             <ol class="breadcrumb">
-                <li><a href="index.html">首页</a></li>
+                <li><a href="home.html">首页</a></li>
                 <li class="active">项目案例</li>
             </ol>
         </div>
@@ -140,10 +140,10 @@
     </div>
     <!--/Team-->
     <!--Footer-->
-    <footer class="footer_wrapper" id="contact" style="background: #f5f5f5;">
+    <footer class="footer_wrapper wow" id="contact" data-wow-delay=".7s">
         <div class="container">
             <section class="page_section contact" id="contact">
-                <div class="contact_section animated">
+                <div class="contact_section wow animated" data-wow-delay=".5s">
                     <h2>联系我们</h2>
                     <div class="row">
                         <div class="col-lg-4">
@@ -157,29 +157,29 @@
                 <div class="row">
                     <div class="footerbottom">
                         <div class="col-md-3 col-sm-6">
-                            <div class="footerwidget fadeInUp">
+                            <div class="footerwidget wow fadeInUp" data-wow-delay=".7s">
                                 <h4>
                                     快速链接
                                 </h4>
                                 <div class="menu-course">
                                     <ul class="menu">
                                         <li>
-                                            <a href="index.html">
+                                            <a href="home.html">
                                                 首页 
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="index.html#aboutUs">
+                                            <a href="javascript:void(0)" data-src="detail.html?mod=aboutusCorp">
                                                 关于永忠
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="index.html#news">
+                                            <a href="javascript:void(0)" data-src="detail.html?mod=newsQiye">
                                                 新闻中心
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="index.html#Portfolio">
+                                            <a href="javascript:void(0)" data-src="detail.html?mod=case">
                                                 项目案例
                                             </a>
                                         </li>
@@ -188,19 +188,19 @@
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <div class="footerwidget fadeInUp">
+                            <div class="footerwidget wow fadeInUp" data-wow-delay=".8s">
                                 <h4>
                                     人力资源
                                 </h4>
                                 <div class="menu-course">
                                     <ul class="menu">
                                         <li> 
-                                            <a href="index.html#hr">
+                                            <a href="javascript:void(0)" data-src="detail.html?mod=hrZHaopin">
                                                 社会招聘  
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="index.html#hr">
+                                            <a href="javascript:void(0)" data-src="detail.html?mod=hrZuzhi">
                                                 组织架构
                                             </a>
                                         </li>
@@ -209,29 +209,29 @@
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <div class="footerwidget fadeInUp">
+                            <div class="footerwidget wow fadeInUp" data-wow-delay=".9s">
                                 <h4>
                                     服务行业
                                 </h4>
                                 <div class="menu-course">
                                     <ul class="menu">
                                         <li>
-                                            <a href="index.html#Portfolio">
+                                            <a href="javascript:void(0)" data-src="detail.html?mod=case">
                                                 公共建筑
                                             </a>
                                         </li>
                                         <li> 
-                                            <a href="index.html#Portfolio">
+                                            <a href="javascript:void(0)" data-src="detail.html?mod=case">
                                                 教育建筑
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="index.html#Portfolio">
+                                            <a href="javascript:void(0)" data-src="detail.html?mod=case">
                                                 医疗卫生建筑
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="index.html#Portfolio">
+                                            <a href="javascript:void(0)" data-src="detail.html?mod=case">
                                                 更多建筑行业
                                             </a>
                                         </li>
@@ -240,7 +240,7 @@
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <div class="footerwidget fadeInUp">
+                            <div class="footerwidget wow fadeInUp" data-wow-delay="1s">
                                 <h4>联系方式</h4>
                                 <p> 四川省永忠工程管理有限公司</p>
                                 <p> Sichuan Yong Zhong Engineering Management Co.,Ltd.</p>
@@ -283,7 +283,7 @@
         var mod = $.getURLParam("mod");
         var casetype = $.getURLParam("casetype");
         if (!mod || mod.indexOf('#') > -1) {
-            window.location.href = "index.html";
+            window.location.href = "home.html";
             return;
         }
 
