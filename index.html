@@ -1,988 +1,124 @@
 <!doctype html>
 <html>
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, maximum-scale=1">
-    <title>四川省永忠工程管理有限公司</title>
-    <link rel="icon" href="favicon.png" type="image/png">
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
-    <link href="css/animate.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <!--[if lt IE 9]>
-    <script src="js/respond-1.1.0.min.js"></script>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/html5element.js"></script>
-    <![endif]-->
-    <style>
-        .unify-bg {
-            /*background-color: #0076ff;*/
-            /*background: url(img/bg-wall3.jpg);*/
-            /*background: url(img/bg-wall5.jpg);*/
-            /*background-color: #59a6f4;*/
-            background-repeat: repeat-y;
-            background-size: 100% 100%;
-        }
-        .unify-bg2 {
-            /*background: url(img/bg-wall6.jpg);*/
-            background-color: #fff;
-            background-repeat: repeat-y;
-            background-size: 100% 100%;
-        }
-        .aboutus-bg {
-            background: url(img/bg-wall-aboutus.jpg);
-            background-size: 100% 621px;
-        }
-        .case-bg {
-            background: url(img/bg-wall-case-half.jpg) no-repeat scroll 0 0;
-            background-size: 100% 210px
-        }
-        .gradient-bg {
-            background: -webkit-linear-gradient(right top, #87e5ff, #4385ff);
-            background: linear-gradient(right top, #87e5ff, #4385ff);
-        }
-        h2, .section-title h2, .contact_section h2 {
-            color: #005490;
-            /*color: #fff;*/
-        }
-        .footer_wrapper h2,
-        .footerbottom h4 {
-            color: #005490;
-        }
-        .cus-color {
-            /*color: #fff;*/
-            color: #888;
-        }
-        .our-value {
-            width: 100%;
-            height: 360px;
-            background-color: #005490;
-            box-shadow: 0 0 150px 1px #005490;
-            display: flex;
-            justify-content: space-between;
-            -webkit-justify-content: space-between;
-            font-family: '楷体';
-        }
-        .our-value .inner {
-            width: 33%;
-            position: relative;
-        }
-        .our-value .inner .v {
-            font-size: 32px;
-            width: 32px;
-            word-break: break-all;
-            color: #fff;
-            position: absolute;
-            left: 50%;
-            margin-left: -16px;
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, maximum-scale=1">
+<title>四川省永忠工程管理有限公司</title>
+<link rel="icon" href="favicon.png" type="image/png">
+<style type="text/css">
+	html, body {
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+	}
+	.welcome-bx {
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    margin: 0;
+	    box-sizing: border-box;
+	    width: 100%;
+	    height: 100%;
+	    object-fit: fill;
+	}
 
-        }
-        .our-value .inner .v1 {
-            bottom: 20px;
-            left: auto;
-            right: 0;
-        }
-        .our-value .inner .v2 {
-            bottom: 40px;
-        }
-        .our-value .inner .v3 {
-            bottom: 60px;
-            left: 16px;
-        }
-        .small-line {
-            height: 1px;
-            width: 120px;
-            background: #005490;
-            /*background: #fff;*/
-            display: block;
-            margin: 0 auto;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-        .our-title {
-            font: initial;
-            font-size: 24px;
-        }
-        .our-more a, .our-more span {
-            display: inline-block;
-            width: 176px;
-            height: 49px;
-            text-align: center;
-        }
-        .our-more span {
-            color: #fff;
-        }      
-    </style>
+	.welcome-bx .tech-v {
+		position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    object-fit: fill;
+	}
+
+	.logo {
+		position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	    width: 800px;
+	    height: 380px;
+	    z-index: 999;
+		font-family: "微软雅黑";
+	}
+
+	.logo .brand {
+	    display: block;
+	    position: relative;
+	    width: 100%;
+	    height: 100%;
+	}
+
+	.logo .brand .title {
+	    display: block;
+		margin-top: -20px;
+		margin-bottom: 10px;
+		text-align: center;
+		font-size: 24px;
+	    letter-spacing: 3px;
+		position: relative;
+		color: rgb(0, 130, 255);
+	}
+
+	.logo .brand .title a,
+	.logo .brand .title a:visited {
+		color: rgb(0, 130, 255);
+		text-decoration: underline;
+	}
+
+	.logo .brand .title a:hover {
+		text-decoration: none;
+	}
+
+	.logo .brand .title .icon {
+		text-align: center;
+	    width: 46px;
+	    height: 37px;
+	    background: url(img/logo_icon.png) no-repeat scroll 50% 50%;
+	    display: block;
+	    position: absolute;
+	    left: 260px;
+	    top: 50%;
+	    margin-top: -15px;
+	}
+
+	.logo .brand .desc {
+		display: block;
+	    text-align: center;
+	    font-size: 30px;
+	    color: #999;
+	    padding-top: 20px;
+	}
+</style>
 </head>
 
 <body>
-    <!--Header_section-->
-    <header id="header_wrapper">
-        <div class="container">
-            <div class="header_box">
-                <div class="logo"><a href="#"><img src="img/logo.png" alt="logo"></a></div>
-                <nav class="navbar navbar-inverse" role="navigation">
-                    <div class="navbar-header">
-                        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <div id="main-nav" class="collapse navbar-collapse navStyle">
-                        <ul class="nav navbar-nav" id="mainNav">
-                            <li class="item active">
-                                <a href="#hero_section" class="scroll-link">首页</a>
-                            </li>
-                            <li class="item">
-                                <a href="#aboutUs" class="scroll-link">关于我们</a>
-                                <ul class="sub-nav">
-                                    <li><a href="javascript:void(0)" data-src="detail.html?mod=aboutusCorp">公司简介</a></li>
-                                    <li><a href="javascript:void(0)" data-src="detail.html?mod=aboutusCultrue">企业文化</a></li>
-                                    <li><a href="javascript:void(0)" data-src="detail.html?mod=team">领导团队</a></li>
-                                    <li><a href="javascript:void(0)" data-src="detail.html?mod=aboutusAptitude">资质介绍</a></li>
-                                    <li><a href="javascript:void(0)" data-src="detail.html?mod=coreteam">核心力量</a></li>
-                                    <li><a href="javascript:void(0)" data-src="detail.html?mod=aboutusActive">员工活动</a></li>
-                                    <li><a href="javascript:void(0)" data-src="detail.html?mod=aboutusPublic">永忠公益</a></li>
-                                    <li><a href="javascript:void(0)" data-src="detail.html?mod=aboutusHonor">奖励与荣耀</a></li>
-                                    <li><a href="javascript:void(0)" data-src="detail.html?mod=aboutusLearn">奖励与培训</a></li>
-                                </ul>
-                            </li>
-                            <!-- <li class="item"><a href="#service" class="scroll-link">服务支持</a></li> -->
-                            <li class="item">
-                                <a href="#Portfolio" class="scroll-link">项目案例</a>
-                                <ul class="sub-nav">
-                                    <li><a href="javascript:void(0)" data-src="detail.html?mod=case&casetype=qita">甘孜州</a></li>
-                                    <li><a href="javascript:void(0)" data-src="detail.html?mod=case&casetype=jiaoyu">川内项目</a></li>
-                                    <li><a href="javascript:void(0)" data-src="detail.html?mod=case&casetype=yiliao">川外项目</a></li>
-                                </ul>
-                            </li>
-                            <li class="item">
-                                <a href="#news" class="scroll-link">新闻动态</a>
-                                <ul class="sub-nav">
-                                    <li><a href="javascript:void(0)" data-src="detail.html?mod=newsQiye">企业新闻</a></li>
-                                    <li><a href="javascript:void(0)" data-src="detail.html?mod=newsHangye">行业新闻</a></li>
-                                    <li><a href="javascript:void(0)" data-src="detail.html?mod=newsBiao">中标通知</a></li>
-                                    <li><a href="javascript:void(0)" data-src="detail.html?mod=newsTongzhi">通知公告</a></li>
-                                </ul>
-                            </li>
-                            <li class="item">
-                                <a href="#hr" class="scroll-link">招贤纳士</a>
-                                <ul class="sub-nav">
-                                    <li><a href="javascript:void(0)" data-src="detail.html?mod=hrZHaopin">社会招聘</a></li>
-                                    <li><a href="javascript:void(0)" data-src="detail.html?mod=hrZuzhi">组织架构</a></li>
-                                </ul>
-                            </li>
-                            <li class="item"><a href="detail.html?mod=exchange" class="scroll-link">交流中心</a></li>
-                            <li class="item"><a href="detail.html?mod=map" class="scroll-link">联系我们</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <!--Header_section-->
-    <!--Hero_Section-->
-    <section id="hero_section" class="top_cont_outer">
-        <div class="hero_wrapper">
-            <div class="htmleaf-container">
-                <div class="slider" id="slider" style="--img-prev:url(../img/1.jpg)">
-                    <div class="slider__content" id="slider-content">
-                        <div class="slider__images">
-                            <div class="slider__images-item slider__images-item--active" data-id="1"><img src="img/1.jpg" />
-                            </div>
-                            <div class="slider__images-item" data-id="2"><img src="img/2.jpg" /></div>
-                            <div class="slider__images-item" data-id="3"><img src="img/3.jpg" /></div>
-                        </div>
-                        <div class="slider__text">
-                            <div class="slider__text-item slider__text-item--active" data-id="1">
-                                <div class="slider__text-item-head">
-                                    <h3><!-- 技术 --></h3>
-                                </div>
-                                <div class="slider__text-item-info">
-                                    <p><!-- 以客户为中心 --></p>
-                                </div>
-                            </div>
-                            <div class="slider__text-item" data-id="2">
-                                <div class="slider__text-item-head">
-                                    <h3><!-- 人才 --></h3>
-                                </div>
-                                <div class="slider__text-item-info">
-                                    <p>
-                                        <!-- 以奋斗者为本 -->
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="slider__text-item" data-id="3">
-                                <div class="slider__text-item-head">
-                                    <h3><!-- 价值 --></h3>
-                                </div>
-                                <div class="slider__text-item-info">
-                                    <p>
-                                        <!-- 以结果为导向 -->
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider__nav">
-                        <div class="slider__nav-arrows">
-                            <div class="slider__nav-arrow slider__nav-arrow--left" id="left">
-                                to left
-                            </div>
-                            <div class="slider__nav-arrow slider__nav-arrow--right" id="right">
-                                to right
-                            </div>
-                        </div>
-                        <div class="slider__nav-dots" id="slider-dots">
-                            <div class="slider__nav-dot slider__nav-dot--active" data-id="1">
-                            </div>
-                            <div class="slider__nav-dot" data-id="2">
-                            </div>
-                            <div class="slider__nav-dot" data-id="3">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Hero_Section-->
-    <section id="aboutUs" class="unify-bg">
-        <!--Aboutus-->
-        <div class="inner_wrapper">
-            <div class="container w">
-                <h2>
-                    关于我们<br/>
-                    <span style="font-family: Raleway; font-weight: normal;">
-                    Who We Are?</span>
-                </h2>
-                <div class="inner_section">
-                    <div class="row">
-                        <!-- <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right">
-                            <img src="img/about-img.jpg" class="img-circle delay-03s animated wow zoomIn" alt="">
-                            <div class="our-value">
-                                <div class="inner">
-                                    <div class="v v1">以客户为中心</div>
-                                </div>
-                                <div class="inner">
-                                    <div class="v v2">以奋斗者为本</div>
-                                </div>
-                                <div class="inner">
-                                    <div class="v v3">以结果为导向</div>
-                                </div>
-                            </div>
-                        </div> -->
-                        <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class=" delay-01s animated fadeInDown wow animated">
-                                <p class="cus-color" style="line-height: 30px;">&nbsp;&nbsp;&nbsp;&nbsp;四川省永忠工程管理有限公司是一家集建筑设计、工程造价、工程咨询等综合性业务为一体的项目管理企业。公司拥有一支精于心、践于行，想干事，能干事，能干成事的专业技术团队。</p>
-                                <br/>
-                                <p class="cus-color">公司现有员工80余人，其中国家注册设计师18人、注册造价师10人、注册咨询师6人，中级以上 专业技术职称人员16人，高级职称5人。公司成立6年来，本着立足川内，扎根高原，服务社会为宗旨，公司业务遍及四川、西藏等30余个县市区，先后完成设计项目1000余个，可研项目450余个，财评项目900余个，审计项目600余个。公司通过在项目实施中不断的学习、探索、实践，积累了成熟的项目管理经验，获得了“甘孜州财评协作优秀单位”称号。</p>
-                                <br/>
-                                <p class="cus-color">作为一家成长型企业，公司将秉承“以客户为中心、以奋斗者为本、以结果为导向”的企业文化精神，以人才和创新为核心竞争力，与广大客户建立起长期稳定的合作关系。在完善的管理制度和质量控制体系保障下，以“为客户创造价值，为社会创造财富，为员工创造机遇”为企业使命，与祖国同呼吸，共命运，心连心，积极投身西部大开发，助力脱贫攻坚，为争做行业领先品牌不断进取。</p>
-                            </div>
-                            <div class="work_bottom cus-color our-more">
-                                <!-- <span>想了解更多..</span> -->
-                                <a href="detail.html?mod=map" class="contact_btn">联系我们</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Container -->
-        <div id="Portfolio" class="container portfolio_title">
-            <!-- Title -->
-            <div class="section-title">
-                <div class="small-line"></div>
-                <h2>项目案例</h2>
-            </div>
-            <!--/Title -->
-        </div>
-        <div id="filters" class="sixteen columns">
-            <ul class="clearfix">
-                <!-- <li>
-                    <a id="all" href="#" data-filter="*" class="active">
-                        <h5>全部</h5>
-                    </a>
-                </li> -->
+	<div class="welcome-bx">
+		<video loop preload="auto" autoplay class="tech-v">
+			<source src="assets/login.mp4" type="video/mp4">
+		</video>
+	</div>
+	<div class="logo">
+		<div class="brand">
+			<span class="title">
+				<!-- <div class="icon"></div> -->
+				<a href="home.html">点击进入</a>
+			</span>
+			<!-- <span class="desc">以客户为中心、以奋斗为本、以结果为导向
+			</span> -->
+		</div>
+	</div>
 
-                <li>
-                    <a id="all" href="#" data-filter=".qita" class="active">
-                        <h5>公共建筑</h5>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" data-filter=".jiaoyu">
-                        <h5>教育建筑</h5>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" data-filter=".yiliao">
-                        <h5>医疗卫生建筑</h5>
-                    </a>
-                </li>
-                
-                <!-- <li>
-                    <a class="" href="#" data-filter=".appleIOS">
-                        <h5>川中地区</h5>
-                    </a>
-                </li>
-                <li>
-                    <a class="" href="#" data-filter=".web">
-                        <h5>川外地区</h5>
-                    </a>
-                </li> -->
-            </ul>
-        </div>
-        <!-- Container -->
-    </section>
-    <!--Aboutus-->
-    <!--Service-->
-    <!--<section id="service">
-         <div class="container w">
-            <h2>服务支持</h2>
-            <div class="service_wrapper">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="service_block">
-                            <div class="service_icon delay-03s animated wow  zoomIn">
-                                <span><i class="fa fa-bitbucket"></i></span>
-                            </div>
-                            <h3 class="animated fadeInUp wow">工程管理</h3>
-                            <p class="animated fadeInDown wow">
-                                在完善的管理制度和质量控制体系保障下，公司遵照“专业、诚信、高效、创新”的企业精神，以“为客户创造价值，为社会创造财富，为员工创造机遇”为企业使命，追求卓越，勤勉探索，为争做行业领先品牌不断进取。
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 borderLeft">
-                        <div class="service_block">
-                            <div class="service_icon icon2  delay-03s animated wow zoomIn">
-                                <span><i class="fa fa-dribbble"></i></span>
-                            </div>
-                            <h3 class="animated fadeInUp wow">过程管控</h3>
-                            <p class="animated fadeInDown wow">
-                                在完善的管理制度和质量控制体系保障下，公司遵照“专业、诚信、高效、创新”的企业精神，以“为客户创造价值，为社会创造财富，为员工创造机遇”为企业使命，追求卓越，勤勉探索，为争做行业领先品牌不断进取。
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 borderLeft">
-                        <div class="service_block">
-                            <div class="service_icon icon3  delay-03s animated wow zoomIn">
-                                <span><i class="fa fa-male"></i></span>
-                            </div>
-                            <h3 class="animated fadeInUp wow">工程设计</h3>
-                            <p class="animated fadeInDown wow">
-                                在完善的管理制度和质量控制体系保障下，公司遵照“专业、诚信、高效、创新”的企业精神，以“为客户创造价值，为社会创造财富，为员工创造机遇”为企业使命，追求卓越，勤勉探索，为争做行业领先品牌不断进取。
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> 
-    </section> -->
-    <!--Service-->
-    <!-- Portfolio -->
-    <section class="content">
-        <div class="portfolio-top"></div>
-        <!-- Portfolio Filters -->
-        <div class="portfolio">
-            
-            <!--/Portfolio Filters -->
-            <!-- Portfolio Wrapper -->
-            <div class="isotope fadeInLeft animated wow" style="position: relative; overflow: hidden; height: 480px;" id="portfolio_wrapper">
-                <!-- Portfolio Item -->
-                
-                <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   qita isotope-item">
-                    
-                    <div class="portfolio_img">
-                        
-                            <img src="img/portfolio_pic1.jpg" alt="Portfolio 1" />
-                        
-                    </div>
-
-                    <div class="item_overlay">
-                        <div class="item_info">
-                            <a href="javascript:void(0);" data-src="detail.html?mod=caseyingshan"><h4 class="project_name">营山外立面改造项目</h4></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!--/Portfolio Item -->
-                <!-- Portfolio Item-->
-                <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  qita isotope-item">
-                    <div class="portfolio_img">
-                        <img src="img/portfolio_pic2.jpg" alt="Portfolio 1">
-                    </div>
-                    <div class="item_overlay">
-                        <div class="item_info">
-                            <a href="javascript:void(0);" data-src="detail.html?mod=casesiguniang">
-                            <h4 class="project_name">四姑娘山候车棚</h4></a>
-                        </div>
-                    </div>
-                </div>
-                <!--/Portfolio Item -->
-                <!-- Portfolio Item -->
-                <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  qita  isotope-item">
-                    <div class="portfolio_img">
-                        <img src="img/portfolio_pic3.jpg" alt="Portfolio 1">
-                    </div>
-                    <div class="item_overlay">
-                        <div class="item_info">
-                            <a href="javascript:void(0);" data-src="detail.html?mod=casesantai">
-                            <h4 class="project_name">三台会仙市场</h4></a>
-                        </div>
-                    </div>
-                </div>
-                <!--/Portfolio Item-->
-                <!-- Portfolio Item-->
-                <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   prototype qita isotope-item">
-                    <div class="portfolio_img">
-                        <img src="img/portfolio_pic4.jpg" alt="Portfolio 1">
-                    </div>
-                    <div class="item_overlay">
-                        <div class="item_info">
-                            <a href="javascript:void(0);" data-src="detail.html?mod=casefushun">
-                            <h4 class="project_name">富顺赵化镇</h4></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Portfolio Item -->
-                <!-- Portfolio Item -->
-                <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  qita isotope-item">
-                    <div class="portfolio_img">
-                        <img src="img/portfolio_pic5.jpg" alt="Portfolio 1">
-                    </div>
-                    <div class="item_overlay">
-                        <div class="item_info">
-                            <a href="javascript:void(0);" data-src="detail.html?mod=casedanba">
-                            <h4 class="project_name">丹巴嘉绒广场</h4></a>
-                        </div>
-                    </div>
-                </div>
-                <!--/Portfolio Item -->
-                <!-- Portfolio Item -->
-                <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  qita isotope-item">
-                    <div class="portfolio_img">
-                        <img src="img/portfolio_pic6.jpg" alt="Portfolio 1">
-                    </div>
-                    <div class="item_overlay">
-                        <div class="item_info">
-                            <a href="javascript:void(0);" data-src="detail.html?mod=casebazhong">
-                            <h4 class="project_name">巴中项目观景平台透视</h4></a>
-                        </div>
-                    </div>
-                </div>
-                <!--/Portfolio Item -->
-                <!-- Portfolio Item  -->
-                <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four qita isotope-item">
-                    <div class="portfolio_img">
-                        <img src="img/portfolio_pic7.jpg" alt="Portfolio 1">
-                    </div>
-                    <div class="item_overlay">
-                        <div class="item_info">
-                            <a href="javascript:void(0);" data-src="detail.html?mod=casesantaiyanglao">
-                            <h4 class="project_name">三台养老地产效果图</h4></a>
-                        </div>
-                    </div>
-                </div>
-                <!--/Portfolio Item -->
-                <!-- Portfolio Item -->
-                <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   qita isotope-item">
-                    <div class="portfolio_img">
-                        <img src="img/portfolio_pic8.jpg" alt="Portfolio 1">
-                    </div>
-                    <div class="item_overlay">
-                        <div class="item_info">
-                            <a href="javascript:void(0);" data-src="detail.html?mod=caseseda">
-                            <h4 class="project_name">色达康南商业街</h4></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!--/Portfolio Item -->
-
-                <!-- Portfolio Item -->
-                <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   jiaoyu isotope-item">
-                    <div class="portfolio_img">
-                        <img src="img/indexhailuo.jpg" alt="Portfolio 1">
-                    </div>
-                    <div class="item_overlay">
-                        <div class="item_info">
-                            <a href="javascript:void(0);" data-src="detail.html?mod=casehailuo">
-                            <h4 class="project_name">海螺沟寄宿制小学</h4></a>
-
-                        </div>
-                    </div>
-                </div>
-                
-                <!--/Portfolio Item -->
-
-                <!-- Portfolio Item -->
-                <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   jiaoyu isotope-item">
-                    <div class="portfolio_img">
-                        <img src="img/indexshiqu.jpg" alt="Portfolio 1">
-                    </div>
-                    <div class="item_overlay">
-                        <div class="item_info">
-                            <a href="javascript:void(0);" data-src="detail.html?mod=caseshiqu">
-                            <h4 class="project_name">石渠教育局廊子</h4></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!--/Portfolio Item -->
-
-                <!-- Portfolio Item -->
-                <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   yiliao isotope-item">
-                    <div class="portfolio_img">
-                        <img src="img/indexshehong.jpg" alt="Portfolio 1">
-                    </div>
-                    <div class="item_overlay">
-                        <div class="item_info">
-                            <a href="javascript:void(0);" data-src="detail.html?mod=caseshehong">
-                            <h4 class="project_name">射洪县第二人民医院</h4></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!--/Portfolio Item -->
-
-            </div>
-            <!--/Portfolio Wrapper -->
-        </div>
-        <!--/Portfolio Filters -->
-        <div class="portfolio_btm">
-        </div>
-        <div id="project_container">
-            <div class="clear"></div>
-            <div id="project_data"></div>
-        </div>
-    </section>
-    <!--/Portfolio -->
-    <section id="news" class="news_section unify-bg2" >
-        <!--page_section-->
-        <div class="container w">
-            <div class="heading text-center">
-                <!-- Heading -->
-                <div class="small-line"></div>
-                <h2>新闻动态</h2>
-                <a href="detail.html?mod=newsQiye" class="contact_btn" style="border: 1px solid #005490; width: 100px; height: auto;left: 50%;margin-left: -50px;
-                    position: relative;cursor: pointer">更多新闻
-            </a>
-                <br/>
-                <p class="cus-color">公司大事记 </p>
-                <br/>
-            </div>
-            <div id="timeline">
-                <div class="row timeline-movement timeline-movement-top">
-                    <!-- <div class="timeline-badge timeline-future-movement">
-                    <a href="#">
-                        <span class="glyphicon glyphicon-plus"></span>
-                    </a>
-                </div> -->
-                    <div class="timeline-badge timeline-filter-movement">
-                        <a href="#">
-                        <span class="glyphicon glyphicon-time"></span>
-                    </a>
-                    </div>
-                </div>
-                <div class="row timeline-movement">
-                    <div class="timeline-badge">
-                        <span class="timeline-balloon-date-day">1月</span>
-                        <span class="timeline-balloon-date-month">2018年</span>
-                    </div>
-                    <div class="col-sm-6  timeline-item">
-                        <div class="row">
-                            <div class="col-sm-11">
-                                <div class="timeline-panel credits">
-                                    <ul class="timeline-panel-ul">
-                                        <li><span class="importo">注册成立四川省永忠工程管理有限公司成都分公司</span></li>
-                                        <li><span class="causale">注册地：成都市青羊区腾飞大道189号10栋A座,承接设计、造价、咨询业务。</span> </li>
-                                        <li>
-                                            <p><small class="text-muted"> 2018年01月18日 </small></p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6  timeline-item">
-                        <div class="row">
-                            <div class="col-sm-offset-1 col-sm-11">
-                                <div class="timeline-panel debits">
-                                    <ul class="timeline-panel-ul">
-                                        <li><span class="importo">注册成立四川省永忠工程管理有限公司康定总公司</span></li>
-                                        <li><span class="causale">注册地：康定市炉城镇榆林新区恒丰益家1栋2单元6楼4号，开始全面承接设计、造价、咨询业务。</span> </li>
-                                        <li>
-                                            <p><small class="text-muted"> 20187年01月01日</small></p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--due -->
-                <div class="row timeline-movement">
-                    <div class="timeline-badge">
-                        <span class="timeline-balloon-date-day">6月</span>
-                        <span class="timeline-balloon-date-month">2017</span>
-                    </div>
-                    <div class="col-sm-offset-6 col-sm-6  timeline-item">
-                        <div class="row">
-                            <div class="col-sm-offset-1 col-sm-11">
-                                <div class="timeline-panel debits">
-                                    <ul class="timeline-panel-ul">
-                                        <li><span class="importo">注册成立四川省永忠工程管理有限公司理塘分公司</span></li>
-                                        <li><span class="causale">注册地：理塘县高城镇理康村89号，承接设计、造价、咨询业务。</span> </li>
-                                        <li>
-                                            <p><small class="text-muted"> 2017年6月20日 </small></p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6  timeline-item">
-                        <div class="row">
-                            <div class="col-sm-11">
-                                <div class="timeline-panel credits">
-                                    <ul class="timeline-panel-ul">
-                                        <li><span class="importo">北京思泰工程造价咨询有限公司四川分公司更名为北京思泰工程咨询有限公司四川分公司。</span></li>
-                                        <li><span class="causale">北京思泰工程造价咨询有限公司四川分公司更名为北京思泰工程咨询有限公司四川分公司。</span> </li>
-                                        <li>
-                                            <p><small class="text-muted"> 2016年2月25日 </small></p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row timeline-movement">
-                    <div class="timeline-badge">
-                        <span class="timeline-balloon-date-day">9月</span>
-                        <span class="timeline-balloon-date-month">2015</span>
-                    </div>
-                    <div class="col-sm-offset-6 col-sm-6  timeline-item">
-                        <div class="row">
-                            <div class="col-sm-offset-1 col-sm-11">
-                                <div class="timeline-panel debits">
-                                    <ul class="timeline-panel-ul">
-                                        <li><span class="importo">四川省永忠工程管理有限公司成立</span></li>
-                                        <li><span class="causale">设计和咨询丙级资质办理，专业技术人员齐全。</span> </li>
-                                        <li>
-                                            <p><small class="text-muted"> 2015年9月22日 </small></p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6  timeline-item">
-                        <div class="row">
-                            <div class="col-sm-11">
-                                <div class="timeline-panel credits">
-                                    <ul class="timeline-panel-ul">
-                                        <li><span class="importo">公司搬迁至成都市青羊工业园 </span></li>
-                                        <li><span class="causale">几个业务板块联合办公，员工人数由几人增长至100人。 </span> </li>
-                                        <li>
-                                            <p><small class="text-muted"> 2015年6月12日</small></p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--client_logos-->
-    <!-- 招贤纳士 start-->
-    <section id="hr" class="page_section unify-bg2 hr" >
-        <div class="container w">
-            <div class="small-line"></div>
-            <h2>招贤纳士</h2>
-            <div class="row page-title text-center wow bounce" data-wow-delay="1s">
-                <h5 class="cus-color">近期招聘</h5>
-                <h2><span>更多</span>工作为你而来 </h2>
-            </div>
-            <div class="row jobs">
-                <div class="col-md-9">
-                    <div class="job-posts table-responsive">
-                        <table class="table">
-                            <tr class="odd wow fadeInUp" data-wow-delay="1s">
-                                <td class="tbl-logo"><img src="img/job-logo1.png" alt=""></td>
-                                <td class="tbl-title">
-                                    <h4>建筑设计师 <br><span class="job-type">全职</span></h4></td>
-                                <td>
-                                    <p>建筑学类专业，本科以上学历。</p>
-                                </td>
-                                <td>
-                                    <p><i class="fa fa-location-arrow"></i> 青羊工业总部基地F区10A栋</p>
-                                </td>
-                                <td>
-                                    <p>面议</p>
-                                </td>
-                                <td class="tbl-apply"><a href="detail.html?mod=hrZHaopin">即刻应聘</a></td>
-                            </tr>
-                            <tr class="even wow fadeInUp" data-wow-delay="1.1s">
-                                <td class="tbl-logo"><img src="img/job-logo2.png" alt=""></td>
-                                <td class="tbl-title">
-                                    <h4>方案设计师 <br><span class="job-type">全职</span></h4></td>
-                                <td>
-                                    <p>建筑学、环境艺术设计及相关专业</p>
-                                </td>
-                                <td>
-                                    <p><i class="fa fa-location-arrow"></i> 青羊工业总部基地F区10A栋</p>
-                                </td>
-                                <td>
-                                    <p>面议</p>
-                                </td>
-                                <td class="tbl-apply"><a href="detail.html?mod=hrZHaopin">即刻应聘</a></td>
-                            </tr>
-                            <tr class="odd wow fadeInUp" data-wow-delay="1.2s">
-                                <td class="tbl-logo"><img src="img/job-logo3.png" alt=""></td>
-                                <td class="tbl-title">
-                                    <h4>方案主创 <br><span class="job-type">全职</span></h4></td>
-                                <td>
-                                    <p>5年及以上公建及住宅方案设计工作经验</p>
-                                </td>
-                                <td>
-                                    <p><i class="fa fa-location-arrow"></i> 青羊工业总部基地F区10A栋</p>
-                                </td>
-                                <td>
-                                    <p>面议</p>
-                                </td>
-                                <td class="tbl-apply"><a href="detail.html?mod=hrZHaopin">即刻应聘</a></td>
-                            </tr>
-                            <tr class="even wow fadeInUp" data-wow-delay="1.3s">
-                                <td class="tbl-logo"><img src="img/job-logo2.png" alt=""></td>
-                                <td class="tbl-title">
-                                    <h4>结构设计师 <br><span class="job-type">全职</span></h4></td>
-                                <td>
-                                    <p>本科及以上学历 土木工程等相关专业</p>
-                                </td>
-                                <td>
-                                    <p><i class="fa fa-location-arrow"></i> 青羊工业总部基地F区10A栋</p>
-                                </td>
-                                <td>
-                                    <p>面议</p>
-                                </td>
-                                <td class="tbl-apply"><a href="detail.html?mod=hrZHaopin">即刻应聘</a></td>
-                            </tr>
-                            <tr class="odd wow fadeInUp" data-wow-delay="1.4s">
-                                <td class="tbl-logo"><img src="img/job-logo2.png" alt=""></td>
-                                <td class="tbl-title">
-                                    <h4>市政道路设计师 <br><span class="job-type">全职</span></h4></td>
-                                <td>
-                                    <p>有3年以上市政道路及公路实际工作经验</p>
-                                </td>
-                                <td>
-                                    <p><i class="fa fa-location-arrow"></i> 青羊工业总部基地F区10A栋</p>
-                                </td>
-                                <td>
-                                    <p>面议</p>
-                                </td>
-                                <td class="tbl-apply"><a href="detail.html?mod=hrZHaopin">即刻应聘</a></td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="work_bottom cus-color our-more">
-                        <a href="javascript:void(0)" data-src="detail.html?mod=hrZHaopin" class="contact_btn"> <i class="fa fa-refresh"></i>更多工作机会</a>
-                    </div>
-                </div>
-                <div class="col-md-3 hidden-sm">
-                    <div class="job-add wow fadeInRight" data-wow-delay="1.5s">
-                        <h2>准备好了 ? </h2>
-                        <a href="detail.html?mod=map">联系我们</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- 招贤纳士 end-->
-    
-    <!-- 客服挂件 -->
-    <div class="fk-toolArea" id="faiscoService" style="">
-        <ul class="draggable f-toolList">
-            <li class="f-toolItem f-toolAskItem f-toolAskItemHover J_askItem left">
-                <a class="f-toolBlock">
-                    <i class="f-icon f-icon-ask"></i>
-                </a>
-                <div class="f-subArea J_subArea">
-                    <div class="fk-ask-panelWrap">
-                        <div class="fk-ask-panel fk-ask-panel-custom">
-                            <div class="f-ask-telWrap">
-                                <div class="fk-icon fk-icon-tel"></div>
-                                <div class="f-tel-txtWrap">
-                                    <div class="f-txt">电话咨询</div>
-                                    <div class="f-tel">028-87422267</div>
-                                </div>
-                            </div>
-                            <div class="f-ask-qqWrap">
-                                <div class="f-qq-hd">
-                                    <div class="fk-icon fk-icon-wx"></div>
-                                    <div class="f-qq-txtWrap">QQ咨询</div>
-                                </div>
-                                <div class="f-qq-sec">
-                                    <div class="f-qq-list">
-                                        <a href="tencent://message/?uin=396814807&Site=Sambow&Menu=yes" class="f-qq-item f-qq-item-before J_beforeSvr" onclick="javascript:void(0)">客服小赵</a><a href="tencent://message/?uin=87512348&Site=Sambow&Menu=yes" class="f-qq-item f-qq-item-after J_afterSvr" onclick="javascript:void(0)">客服小李</a><a href="tencent://message/?uin=396814807&Site=Sambow&Menu=yes" class="f-qq-item f-qq-item-after J_agentSvr" onclick="javascript:void(0)">业务咨询</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <!-- <li class="f-toolItem f-toolRefeedItem"><a class="f-toolBlock J_refeedLink" href="http://www.fkw.com/feedback/feedback.html?t=1&amp;p=0" target="_blank"><i class="f-icon f-icon-refeed"></i><span class="f-txt">反馈</span></a></li><li class="f-toolItem f-toolRebackItem" style="display: none;"><a class="f-toolBlock J_reback" href="javascript:;"><i class="f-icon f-icon-reback"></i></a></li> -->
-        </ul>
-    </div>
-
-    <!--Footer-->
-    <!--Footer-->
-    <footer class="footer_wrapper wow" id="contact" data-wow-delay=".7s">
-        <div class="container">
-            <section class="page_section contact" id="contact">
-                <div class="contact_section wow animated" data-wow-delay=".5s">
-                    <h2>联系我们</h2>
-                    <div class="row">
-                        <div class="col-lg-4">
-                        </div>
-                        <div class="col-lg-4">
-                        </div>
-                        <div class="col-lg-4">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="footerbottom">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="footerwidget wow fadeInUp" data-wow-delay=".7s">
-                                <h4>
-                                    快速链接
-                                </h4>
-                                <div class="menu-course">
-                                    <ul class="menu">
-                                        <li>
-                                            <a href="index.html">
-                                                首页 
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0)" data-src="detail.html?mod=aboutusCorp">
-                                                关于永忠
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0)" data-src="detail.html?mod=newsQiye">
-                                                新闻中心
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0)" data-src="detail.html?mod=case">
-                                                项目案例
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="footerwidget wow fadeInUp" data-wow-delay=".8s">
-                                <h4>
-                                    人力资源
-                                </h4>
-                                <div class="menu-course">
-                                    <ul class="menu">
-                                        <li> 
-                                            <a href="javascript:void(0)" data-src="detail.html?mod=hrZHaopin">
-                                                社会招聘  
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0)" data-src="detail.html?mod=hrZuzhi">
-                                                组织架构
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="footerwidget wow fadeInUp" data-wow-delay=".9s">
-                                <h4>
-                                    服务行业
-                                </h4>
-                                <div class="menu-course">
-                                    <ul class="menu">
-                                        <li>
-                                            <a href="javascript:void(0)" data-src="detail.html?mod=case">
-                                                公共建筑
-                                            </a>
-                                        </li>
-                                        <li> 
-                                            <a href="javascript:void(0)" data-src="detail.html?mod=case">
-                                                教育建筑
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0)" data-src="detail.html?mod=case">
-                                                医疗卫生建筑
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0)" data-src="detail.html?mod=case">
-                                                更多建筑行业
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="footerwidget wow fadeInUp" data-wow-delay="1s">
-                                <h4>联系方式</h4>
-                                <p> 四川省永忠工程管理有限公司</p>
-                                <p> Sichuan Yong Zhong Engineering Management Co.,Ltd.</p>
-                                <br/>
-                                <div class="contact-info">
-                                    <i class="fa fa-map-marker"></i> 地址：成都市青羊区腾飞大道189号青羊工业总部基地F区10A栋
-                                    <br>
-                                    <i class="fa fa-phone"></i> 座机：028-87422267
-                                    <br>
-                                    <i class="fa fa-envelope-o"></i> 邮箱：scyzgc@163.com
-                                </div>
-                            </div>
-                            <!-- end widget -->
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div class="container" style="padding-top: 20px;">
-            <div class="footer_bottom">
-                <span>Copyright &copy; 2018. ChenLiLang</span>
-            </div>
-        </div>
-    </footer>
-
-<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
-<script type="text/javascript" src="js/Tdrag.js"></script>
-<script type="text/javascript" src="js/jquery.nav.js"></script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="js/jquery.isotope.js"></script>
-<script type="text/javascript" src="js/wow.js"></script>
-<script type="text/javascript" src="js/custom.js"></script>
-<script type="text/javascript" src="js/nav.js"></script>
-<script src="js/index.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			setTimeout(function(){
+				//window.location.href = 'home.html';
+				//$(".logo").fadeIn();
+			}, 22000);
+		});
+	</script>
 </body>
-
 </html>
