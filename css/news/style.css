@@ -122,3 +122,8 @@ a.span_link:hover {
     cursor: default;
     display: none;
 }
+
+.jlry_main_box > .news_xq_main > div > p {
+    font-size: 18px;
+    text-indent:2em;
+}
