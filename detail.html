@@ -326,19 +326,17 @@
                 cbox.attr('id', 'exch');
             break;
         }
-        if(casetype){
-            var url = mod.toLowerCase() + '.html?casetype='+casetype;
-            $("iframe.content-box").attr('src', url).load(function() {
-                var h = $(this).contents().find('body').height();
-                $(this).height(h);
-            });
-        }else{
-            var url = mod.toLowerCase() + '.html';
-            $("iframe.content-box").attr('src', url).load(function() {
-                var h = $(this).contents().find('body').height();
-                $(this).height(h);
-            });
+
+        var url = '';
+        if(casetype) {
+            url = mod + '.html?casetype=' + casetype;
+        } else { 
+            url = mod + '.html';
         }
+        $("iframe.content-box").attr('src', url).load(function() {
+            var h = $(this).contents().find('body').height();
+            $(this).height(h);
+        });
     });
 </script>
 </body>
