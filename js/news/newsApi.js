@@ -1,16 +1,38 @@
 /*
- * 企业新闻
+ * 新闻公共api对接
  **/
 
 $(function() {
+    var iframeSrc = window.location.href;
+    var idx = iframeSrc.lastIndexOf('/');
+    iframeSrc = iframeSrc.substr(idx + 1);
+    var type = "";
+    switch (iframeSrc) {
+        case "newsHangye.html":
+            type = 'hangye'; //行业
+        break;
+
+        case "newsQiye.html":
+            type = 'qiye';   //企业
+        break;
+
+        case "newsBiao.html":
+            type = 'biao';   //中标通知
+        break;
+
+        case "newsTongzhi.html":
+            type = 'notes';  //通知公告
+        break;
+    }
+
 	$.ajax({
-		url: 'http://47.106.177.128:16666/news/getNewsList?type=qiye&page=1',
+		url: 'http://47.106.177.128:16666/news/getNewsList?type='+ type +'&page=1',
 		type: 'get',
 		dataType: 'json',
 		success: function(result) {
 			var html = '<div class="article animated"  data-wow-delay=".9s">\
                             <div class="article-left">\
-                                <a href="newsDetail.html?id={3}"><img src="img/business3.jpg"></a>\
+                                <a href="newsDetail.html?id={3}"><img src="{4}"></a>\
                             </div>\
                             <div class="article-right">\
                                 <div class="article-title">\
@@ -28,11 +50,12 @@ $(function() {
 
             for (var i = 0; i < result.length; i++) {
             	var item = result[i];
-            	var resultHtml = "";
+            	var resultHtml = "", defaultImg = "img/hangye3.jpg";
             	resultHtml = html.replace(/\{0\}/g, item.time)
             					 .replace(/\{1\}/g, item.title)
             					 .replace(/\{2\}/g, item.description)
-            					 .replace(/\{3\}/g, item.id);
+                                 .replace(/\{3\}/g, item.id)
+                                 .replace(/\{4\}/g, item.url || defaultImg);
 			 	$('#newsListBox').append(resultHtml);
             }
 		}
