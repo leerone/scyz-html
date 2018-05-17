@@ -6,7 +6,13 @@ $(function() {
 		type: 'get',
 		dataType: 'json',
 		success: function(result) {
-			debugger;
+			$('#titleBox').html(result.title);
+			$('#timeBox').html(result.time);
+			$('#detailBox').html(result.content || result.description);
+			
+			var h = $('#detailBox').height();
+			var parentIfrm = $('iframe.content-box', parent.document);
+			parentIfrm.height(h);
 		}
 	});
 });
