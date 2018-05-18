@@ -10,9 +10,11 @@ $(function() {
 			$('#timeBox').html(result.time);
 			$('#detailBox').html(result.content || result.description);
 			
-			var h = $('#detailBox').height();
-			var parentIfrm = $('iframe.content-box', parent.document);
-			parentIfrm.height(h);
+			setTimeout(function() {
+				var h = $('#detailBox').height();
+				var parentIfrm = $('iframe.content-box', parent.document);
+				parentIfrm.height(h);
+			}, 600);
 		}
 	});
 });

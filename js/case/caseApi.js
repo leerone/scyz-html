@@ -31,6 +31,7 @@ $(function() {
             $('html').append('<script type="text/javascript" src="js/custom.js"></script>');
 			
 			selectCurCaseType();
+			ifrmFitContent();
 		}
 	});
 
@@ -68,4 +69,12 @@ $(function() {
             window.location.href = url;
         });
 	}
+
+    //iframe容器自适应内容
+    function ifrmFitContent() {
+        var h = $('#caseSection').height();
+        var spaceNum = 120; //留白间距
+        var parentIfrm = $('iframe.content-box', parent.document);
+        parentIfrm.height(h + spaceNum);
+    }	
 });

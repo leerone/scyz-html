@@ -30,7 +30,7 @@
             <li><a href="home.html" id="news" target="_top">首页</a></li>
             <li class="active">交流中心</li>
         </ol>
-    <section class="page_section zhaopin" id="zhaopin">
+    <section class="page_section zhaopin" id="exchangeSection">
         <div class="container w">
             <div id="filters" class="sixteen columns">
                 <ul class="clearfix">
@@ -44,8 +44,8 @@
             <div class="row jobs">
                 <div class="col-md-12">
                     <div class="isotope">
-                        <table class="hr-table">
-                            <tr class="odd wow fadeInUp element-item design" data-wow-delay="1s">
+                        <table id="docListBox" class="hr-table">
+                            <!-- <tr class="odd wow fadeInUp element-item design" data-wow-delay="1s">
                                 <td class="tbl-logo"><img src="img/svg/docx.svg" alt=""></td>
                                 <td class="tbl-title">
                                     <h4>《建筑防火规范》</h4>
@@ -129,7 +129,7 @@
                                     <p>上传时间：2018-04-24</p>
                                 </td>
                                 <td class="tbl-download"><a data-toggle="modal" data-target="#jzsjs" href="docs/2018PDF1.pdf">立即下载</a><a target="_blank" href="2018PDF3.html" style="margin-left: 15px">预览</a></td>
-                            </tr>
+                            </tr> -->
                         </table>
                     </div>
                 </div>
@@ -140,11 +140,12 @@
 
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery.isotope.js"></script>
-<script type="text/javascript" src="js/wow.js"></script>
+<!-- <script type="text/javascript" src="js/jquery.isotope.js"></script>
+<script type="text/javascript" src="js/wow.js"></script> -->
+<script type="text/javascript" src="js/doc/docApi.js"></script>
 <script>
 $(function() {
-    var $container = $('.isotope').isotope({
+    /*var $container = $('.isotope').isotope({
         itemSelector: '.element-item',
         layoutMode: 'fitRows',
     });
@@ -152,7 +153,7 @@ $(function() {
     $('#filters').on('click', 'a', function() {
         var filterValue = $(this).attr('data-filter');
         $container.isotope({ filter: filterValue });
-    });
+    });*/
 });
 </script>
 

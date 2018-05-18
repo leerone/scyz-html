@@ -58,6 +58,16 @@ $(function() {
                                  .replace(/\{4\}/g, item.url || defaultImg);
 			 	$('#newsListBox').append(resultHtml);
             }
+
+            ifrmFitContent();
 		}
 	});
+
+    //iframe容器自适应内容
+    function ifrmFitContent() {
+        var h = $('#newsListBox').height();
+        var spaceNum = 120; //留白间距
+        var parentIfrm = $('iframe.content-box', parent.document);
+        parentIfrm.height(h + spaceNum);
+    }
 });

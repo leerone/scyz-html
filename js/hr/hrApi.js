@@ -62,6 +62,7 @@ $(function() {
             $('html').append('<script type="text/javascript" src="js/wow.js"></script>');
 
             bindEvent();
+            ifrmFitContent();
 		}
 	});
 
@@ -78,5 +79,13 @@ $(function() {
 	        $container.isotope({ filter: filterValue });
 	    });
 	}
+
+    //iframe容器自适应内容
+    function ifrmFitContent() {
+        var h = $('#zhaopin').height();
+        var spaceNum = 50; //留白间距
+        var parentIfrm = $('iframe.content-box', parent.document);
+        parentIfrm.height(h + spaceNum);
+    }
 
 });
