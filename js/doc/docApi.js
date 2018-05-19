@@ -1,5 +1,6 @@
 
 $(function() {
+    var microsoftUrl = 'https://view.officeapps.live.com/op/view.aspx?src=';
     $.ajax({
 		url: 'http://47.106.177.128:16666/file/getNotImageFileList?page=1',
 		type: 'get',
@@ -16,7 +17,7 @@ $(function() {
                             <td class="tbl-time">\
                                 <p>上传时间：2018-05-18</p>\
                             </td>\
-                            <td class="tbl-download"><a data-toggle="modal" href="{4}">立即下载</a><a target="_blank" href="2018DOC1.html" style="margin-left: 15px">预览</a></td>\
+                            <td class="tbl-download"><a data-toggle="modal" href="{4}">立即下载</a><a target="_blank" href="{5}" style="margin-left: 15px">预览</a></td>\
                         </tr>';
             
             for (var i = 0; i < result.length; i++) {
@@ -25,9 +26,10 @@ $(function() {
             	var resultHtml = "";
             	resultHtml = html.replace(/\{0\}/g, getType(item.type))
             					 .replace(/\{1\}/g, fetchName(item.name))
-            					 //.replace(/\{2\}/g, item.address)
+            					 //.replace(/\{2\}/g, item.time)
                                  .replace(/\{3\}/g, numType)
-                                 .replace(/\{4\}/g, item.url);
+                                 .replace(/\{4\}/g, item.url)
+                                 .replace(/\{5\}/g, microsoftUrl + item.url);
                 
 			 	$('#docListBox').append(resultHtml);
             }
