@@ -278,7 +278,8 @@ p {
 ---------------------------------*/
 
 .top_cont_outer {
-    background: #005490;
+    /*background: #005490;*/
+    background: #fff;
     position: relative;
     overflow: hidden;
 }

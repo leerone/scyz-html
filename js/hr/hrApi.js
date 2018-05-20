@@ -5,7 +5,7 @@ $(function() {
 		type: 'get',
 		dataType: 'json',
 		success: function(result) {
-			var html = '<tr class="{8} wow fadeInUp element-item design" data-wow-delay="1s">\
+			var html = '<tr class="{8} wow fadeInUp element-item {9}" data-wow-delay="1s">\
                             <td class="tbl-logo"><img src="img/job-logo1.png" alt=""></td>\
                             <td class="tbl-title">\
                                 <h4> {0} <br><span class="job-type">全职</span></h4></td>\
@@ -40,7 +40,7 @@ $(function() {
                                 </div>\
                             </div>\
                         </div>';
-            debugger;
+            
             for (var i = 0; i < result.length; i++) {
             	var numType = i % 2 == 0 ? 'even' : 'odd';
             	var item = result[i];
@@ -53,8 +53,9 @@ $(function() {
                                  .replace(/\{5\}/g, item.name)
                                  .replace(/\{6\}/g, item.desc1)
                                  .replace(/\{7\}/g, item.desc2)
-                                 .replace(/\{8\}/g, numType);
-                console.log(resultHtml); 
+                                 .replace(/\{8\}/g, numType)
+                                 .replace(/\{9\}/g, getType(item.type));
+                
 			 	$('#hrListBox').append(resultHtml);
             }
 
@@ -86,6 +87,24 @@ $(function() {
         var spaceNum = 50; //留白间距
         var parentIfrm = $('iframe.content-box', parent.document);
         parentIfrm.height(h + spaceNum);
+    }
+
+    function getType(t) {
+        var type = "";
+        switch (t) {
+            case "sheji":
+                type = 'design';   //设计
+            break;
+
+            case "sale":
+                type = 'sale';     //销售
+            break;
+
+            case "manage":
+                type = 'manager';  //管理
+            break;
+        }
+        return type;
     }
 
 });

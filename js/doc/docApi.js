@@ -15,7 +15,7 @@ $(function() {
                                 <p>上传者：管理员</p>\
                             </td>\
                             <td class="tbl-time">\
-                                <p>上传时间：2018-05-18</p>\
+                                <p>上传时间：{2}</p>\
                             </td>\
                             <td class="tbl-download"><a data-toggle="modal" href="{4}">立即下载</a><a target="_blank" href="{5}" style="margin-left: 15px">预览</a></td>\
                         </tr>';
@@ -26,9 +26,9 @@ $(function() {
             	var resultHtml = "";
             	resultHtml = html.replace(/\{0\}/g, getType(item.type))
             					 .replace(/\{1\}/g, fetchName(item.name))
-            					 //.replace(/\{2\}/g, item.time)
+            					 .replace(/\{2\}/g, item.time)
                                  .replace(/\{3\}/g, numType)
-                                 .replace(/\{4\}/g, item.url)
+                                 .replace(/\{4\}/g, item.cnurl)
                                  .replace(/\{5\}/g, microsoftUrl + item.url);
                 
 			 	$('#docListBox').append(resultHtml);
@@ -60,12 +60,12 @@ $(function() {
         var type = "";
         switch (t) {
             case "pdf":
-                type = 'pdf'; //pdf
+                type = 'pdf';   //pdf
             break;
 
             case "docx":
             case "doc":
-                type = 'docx';   //word
+                type = 'docx';  //word
             break;
 
             case "rar":
@@ -84,9 +84,18 @@ $(function() {
 
     function fetchName(name) {
         var _name = "";
-        var idx = name.indexOf('=');
-        _name = name.substr(idx + 1);
+        //var idx = name.indexOf('=');
+        var idx = 13;
+        _name = name.substr(idx);
         return _name;
+    }
+
+    function fetchUrl(url) {
+        var _url = "http://www.zkcec.com/scyz/docs/";
+        var _idx = url.lastIndexOf('/')
+        var idx = 13;
+        _url += url.substr(_idx + idx + 1);
+        return _url;
     }
 
     //iframe容器自适应内容
