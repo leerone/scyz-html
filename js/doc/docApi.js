@@ -1,6 +1,5 @@
 
 $(function() {
-    var microsoftUrl = 'https://view.officeapps.live.com/op/view.aspx?src=';
     $.ajax({
 		url: 'http://47.106.177.128:16666/file/getNotImageFileList?page=1',
 		type: 'get',
@@ -29,7 +28,7 @@ $(function() {
             					 .replace(/\{2\}/g, item.time)
                                  .replace(/\{3\}/g, numType)
                                  .replace(/\{4\}/g, item.cnurl)
-                                 .replace(/\{5\}/g, microsoftUrl + item.url);
+                                 .replace(/\{5\}/g, fetchUrl(item.type, item.url));
                 
 			 	$('#docListBox').append(resultHtml);
             }
@@ -84,18 +83,20 @@ $(function() {
 
     function fetchName(name) {
         var _name = "";
-        //var idx = name.indexOf('=');
-        var idx = 13;
-        _name = name.substr(idx);
+        var idx = name.lastIndexOf('.');
+        _name = name.substring(0, idx);
         return _name;
     }
 
-    function fetchUrl(url) {
-        var _url = "http://www.zkcec.com/scyz/docs/";
+    function fetchUrl(type, url) {
+        if (type != 'docx') {
+            return "javascript:alert('该文档格式不支持预览，请直接点击下载!')";
+        }
+        var microsoftUrl = 'https://view.officeapps.live.com/op/view.aspx?src=';
+        var _url = "http://www.scyzgc.com/docs/";
         var _idx = url.lastIndexOf('/')
-        var idx = 13;
-        _url += url.substr(_idx + idx + 1);
-        return _url;
+        _url += url.substr(_idx + 1);
+        return microsoftUrl + _url;
     }
 
     //iframe容器自适应内容

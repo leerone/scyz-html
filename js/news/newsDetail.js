@@ -11,7 +11,7 @@ $(function() {
 			$('#detailBox').html(result.content || result.description);
 			
 			setTimeout(function() {
-				var h = $('#detailBox').height();
+				var h = $('#detailBox').height() + 120;
 				var parentIfrm = $('iframe.content-box', parent.document);
 				parentIfrm.height(h);
 			}, 600);

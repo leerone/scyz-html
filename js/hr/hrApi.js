@@ -5,6 +5,8 @@ $(function() {
 		type: 'get',
 		dataType: 'json',
 		success: function(result) {
+            //缓存数据
+            window.localStorage.setItem('hrStorData', JSON.stringify(result));
 			var html = '<tr class="{8} wow fadeInUp element-item {9}" data-wow-delay="1s">\
                             <td class="tbl-logo"><img src="img/job-logo1.png" alt=""></td>\
                             <td class="tbl-title">\
@@ -21,9 +23,9 @@ $(function() {
                             <td class="tbl-price">\
                                 <p>面议</p>\
                             </td>\
-                            <td class="tbl-apply"><a data-toggle="modal" data-target="#popView{4}">即刻应聘</a></td>\
-                        </tr>\
-                        <div class="modal fade" id="popView{4}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">\
+                            <td class="tbl-apply"><a class="commcls-modal" keyId={4} data-toggle="modal" data-target="#commModal" src="javascript:fillHrDetail()">即刻应聘</a></td>\
+                        </tr>';
+            var tempModal = '<div class="modal fade" id="popView{4}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">\
                             <div class="modal-dialog">\
                                 <div class="modal-content">\
                                     <div class="modal-header">\
@@ -68,6 +70,8 @@ $(function() {
 	});
 
 	function bindEvent() {
+        var modalId = 0;
+
 		var $container = $('.isotope').isotope({
 	        itemSelector: '.element-item',
 	        layoutMode: 'fitRows',
@@ -79,6 +83,22 @@ $(function() {
 	        $(this).addClass('active');
 	        $container.isotope({ filter: filterValue });
 	    });
+
+        $('.commcls-modal').hover(function() {
+            modalId = $(this).attr('keyId');
+        });
+
+        $('#commModal').on('show.bs.modal', function () {
+            var datas = window.localStorage.getItem('hrStorData');
+            datas = JSON.parse(datas);
+            for (var i = 0; i < datas.length; i++) {
+                if (datas[i].id == modalId) {
+                    $('#modalHrTitle').html(datas[i].name);
+                    $('#modalHrRespons').html(datas[i].desc1);
+                    $('#modalHrDemand').html(datas[i].desc1);
+                }
+            }
+        })
 	}
 
     //iframe容器自适应内容
