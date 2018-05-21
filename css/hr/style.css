@@ -174,16 +174,30 @@
 
 /*应聘详情模态框标题*/
 .modal > .modal-dialog > .modal-content > .modal-body > .modal-hr-title {
-    font-size: 32px;
-    font-weight: bold;
+    font-size: 24px;
+    font-weight: normal;
 }
 
 /*应聘详情模态框子标题*/
 .modal > .modal-dialog > .modal-content > .modal-body > .modal-hr-sub-title {
-    font-size: 24px;
-    font-weight: bold;
-    border-left: 10px solid #e42200;
-    padding-left: 10px;
+    font-size: 20px;
+    /* font-weight: bold; */
+    /*border-left: 3px solid #e42200;*/
+    padding: 10px;
+    display: block;
+    position: relative;
+}
+
+.modal > .modal-dialog > .modal-content > .modal-body > .modal-hr-sub-title:before {
+    display: block;
+    content: "";
+    width: 3px;
+    height: 22px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -11px;
+    background: #e42200;
 }
 
 /*应聘详情模态li内容*/
