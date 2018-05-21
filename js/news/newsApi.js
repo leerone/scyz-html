@@ -6,7 +6,7 @@ $(function() {
     var iframeSrc = window.location.href;
     var idx = iframeSrc.lastIndexOf('/');
     iframeSrc = iframeSrc.substr(idx + 1);
-    var type = "";
+    var type = "", defaultImg = "img/hangye3.jpg";
     switch (iframeSrc) {
         case "newsHangye.html":
             type = 'hangye'; //行业
@@ -18,6 +18,7 @@ $(function() {
 
         case "newsBiao.html":
             type = 'biao';   //中标通知
+            defaultImg = 'img/zhongbiao.jpg';
         break;
 
         case "newsTongzhi.html":
@@ -50,7 +51,7 @@ $(function() {
 
             for (var i = 0; i < result.length; i++) {
             	var item = result[i];
-            	var resultHtml = "", defaultImg = "img/hangye3.jpg";
+            	var resultHtml = "";
             	resultHtml = html.replace(/\{0\}/g, item.time)
             					 .replace(/\{1\}/g, item.title)
             					 .replace(/\{2\}/g, item.description)

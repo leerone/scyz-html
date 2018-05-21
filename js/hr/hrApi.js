@@ -23,7 +23,7 @@ $(function() {
                             <td class="tbl-price">\
                                 <p>面议</p>\
                             </td>\
-                            <td class="tbl-apply"><a class="commcls-modal" keyId={4} data-toggle="modal" data-target="#commModal" src="javascript:fillHrDetail()">即刻应聘</a></td>\
+                            <td class="tbl-apply"><a class="commcls-modal" keyId={4} data-toggle="modal" data-target="#commModal">即刻应聘</a></td>\
                         </tr>';
             var tempModal = '<div class="modal fade" id="popView{4}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">\
                             <div class="modal-dialog">\

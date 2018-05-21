@@ -9,7 +9,7 @@
     <link href="css/animate.css" rel="stylesheet" type="text/css">
     <style type="text/css">
         .hr-table > tbody > tr > td.tbl-title {
-            width: 35%;
+            width: 32%;
             text-align: left;
         }
         .hr-table > tbody > tr > td.tbl-uploader {
@@ -19,8 +19,58 @@
             width: 20%;
         }
         .hr-table > tbody > tr > td.tbl-download {
-            width: 20%;
+            width: 25%;
             cursor: pointer;
+        }
+
+        .modal-body {
+            padding: 10px 38px 38px 38px;
+        }
+        .modal-body .row {
+            margin-bottom: 10px;
+        }
+
+        .modal-body .comment-txt .ctrl{
+            display: block;
+            margin-bottom: 20px;
+        }
+        .modal-body .comment-txt .ctrl.txt {
+            width: 200px;
+        }
+        .modal-body .comment-txt .ctrl.ta {
+            width: 100%;
+            height: 150px;
+        }
+
+        .modal-body .comment-list .item {
+            padding: 10px;
+            margin-bottom: 5px;
+            background: #e9e9e9;
+        }
+        .modal-body .comment-list .item .base-info {
+            padding-top: 5px;
+        }
+        .modal-body .comment-list .item .base-info span.s {
+            padding-right: 20px;
+        }
+        .modal-body .comment-list .item .comment {
+            color: #222;
+        }
+
+        .modal-body .comment-txt {
+            padding-top: 20px;
+        }
+
+        .alert {
+            position: absolute;
+            width: 200px;
+            top: 50%;
+            left: 50%;
+            margin-top: -20px;
+            margin-left: -100px;
+            z-index: 9999999;
+            display: none;
+            text-align: center;
         }
     </style>
 </head>
@@ -131,11 +181,50 @@
                                 <td class="tbl-download"><a data-toggle="modal" data-target="#jzsjs" href="docs/2018PDF1.pdf">立即下载</a><a target="_blank" href="2018PDF3.html" style="margin-left: 15px">预览</a></td>
                             </tr> -->
                         </table>
+
+                        <div class="modal fade" id="commModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title" id="modalDocTitle">{1}</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div id="commentList" class="row comment-list">
+                                            <!-- <div class="item"> 
+                                                <div class="base-info">
+                                                    <span class="s ip">
+                                                        1.1.1.1
+                                                    </span>
+                                                    <span class="s nickname">leerone</span>
+                                                    <span class="s time">2018.05.21</span>
+                                                </div>
+                                                <div class="comment">
+                                                    赞一个！
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                        <div class="row comment-txt">
+                                            <input id="txtNick" class="ctrl txt" type="text" placeholder="请输入您的昵称" required />
+                                            <textarea class="ctrl ta" id="taComment" placeholder="请输入您的评论" required>
+                                            </textarea>
+                                        </div>
+                                        <div class="row comment-btn">
+                                            <a id="sumbitComment" href="javascript:void('comment')">提交评论</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <div id="resultOk" class="alert alert-success">
+    </div>
+    <div id="resultWarning" class="alert alert-warning">
+    </div>
 </body>
 
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
