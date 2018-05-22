@@ -7,6 +7,7 @@ $(function() {
 		type: 'get',
 		dataType: 'json',
 		success: function(result) {
+			var emptyTxt = '暂无';
 			$('#breadcrumb, #projName').html(result.name);
 			$('#sumyImage').attr('src', baseUrl + result.url);
 			$('#mainTitle').html(result.title);
@@ -14,11 +15,16 @@ $(function() {
 			$('#summary').html(result.content);
 
 			//$('#designContent').html();
-			$('#projAddress').html(result.address);
-			$('#projAllArea').html(result.coverage);
-			$('#projAllHeight').html(result.height);
-			$('#projDate').html(result.finishtime);
+			$('#projAddress').html(result.address || emptyTxt);
+			$('#projAllArea').html(result.coverage || emptyTxt);
+			$('#projAllHeight').html(result.height || emptyTxt);
+			$('#projDate').html(result.finishtime || emptyTxt);
 			
+			if (result.richtext) {
+				$('#richTextBox').html(result.richtext);
+				$('.rich-box').show();
+			}
+
 			var h = $('#detailBox').height();
 			var parentIfrm = $('iframe.content-box', parent.document);
 			parentIfrm.height(h);
