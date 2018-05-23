@@ -27,7 +27,7 @@ $(function() {
     }
 
 	$.ajax({
-		url: 'http://47.106.177.128:16666/news/getNewsList?type='+ type +'&page=1',
+		url: 'http://47.106.177.128:16666/news/getNewsList?type='+ type,
 		type: 'get',
 		dataType: 'json',
 		success: function(result) {
@@ -37,7 +37,7 @@ $(function() {
                             </div>\
                             <div class="article-right">\
                                 <div class="article-title">\
-                                    <p>{0}</p>\
+                                    <p style="display:none">{0}</p>\
                                     <a class="title" href="newsDetail.html?id={3}">{1}</a>\
                                 </div>\
                                 <div class="article-text">\

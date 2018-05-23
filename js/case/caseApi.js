@@ -2,7 +2,7 @@
 $(function() {
 	var baseUrl = 'http://47.106.177.128:16668/uploadimage/';
     $.ajax({
-		url: 'http://47.106.177.128:16666/case/getCaseList?type=&page=1',
+		url: 'http://47.106.177.128:16666/case/getCaseList?type=',
 		type: 'get',
 		dataType: 'json',
 		success: function(result) {
@@ -31,7 +31,8 @@ $(function() {
             $('html').append('<script type="text/javascript" src="js/custom.js"></script>');
 			
 			selectCurCaseType();
-			ifrmFitContent();
+			setTimeout(ifrmFitContent, 600);
+			//ifrmFitContent();
 		}
 	});
 
@@ -54,7 +55,7 @@ $(function() {
 	}
 
 	function selectCurCaseType() {
-		debugger;
+		//debugger;
 		var casetype = $.getURLParam("casetype");
         $('.clearfix li a').removeClass('active');
 
