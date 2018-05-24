@@ -2,7 +2,7 @@
 $(function() {
 	var baseUrl = 'http://47.106.177.128:16668/uploadimage/';
     $.ajax({
-		url: 'http://47.106.177.128:16666/case/getCaseList?type=',
+		url: 'http://47.106.177.128:16666/case/getAll?type=',
 		type: 'get',
 		dataType: 'json',
 		success: function(result) {

@@ -27,7 +27,7 @@ $(function() {
     }
 
 	$.ajax({
-		url: 'http://47.106.177.128:16666/news/getNewsList?type='+ type,
+		url: 'http://47.106.177.128:16666/news/getAll?type='+ type,
 		type: 'get',
 		dataType: 'json',
 		success: function(result) {

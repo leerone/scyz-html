@@ -96,6 +96,7 @@ $(function() {
         $('#commModal').on('show.bs.modal', function () {
             $('#txtNick, #taComment').val(''); //清空文本框
             loadComment();
+            goBackTop();
         });
 
         $('#sumbitComment').on('click', function(){
@@ -131,6 +132,15 @@ $(function() {
             });
         });
 	}
+
+    //带有动画效果地回到页面顶部
+    function goBackTop() {
+        var hTag = $('body', parent.window.document);
+        if ( $(hTag).scrollTop() ) {
+            $(hTag).animate({scrollTop: 0}, 1000);
+            return false;
+        }
+    }
 
     function autoClose() {
         setTimeout(function(){

@@ -98,6 +98,7 @@ $(function() {
                     $('#modalHrDemand').html(datas[i].desc1);
                 }
             }
+            goBackTop();
         })
 	}
 
@@ -107,6 +108,15 @@ $(function() {
         var spaceNum = 50; //留白间距
         var parentIfrm = $('iframe.content-box', parent.document);
         parentIfrm.height(h + spaceNum);
+    }
+
+    //带有动画效果地回到页面顶部
+    function goBackTop() {
+        var hTag = $('body', parent.window.document);
+        if ( $(hTag).scrollTop() ) {
+            $(hTag).animate({scrollTop: 0}, 1000);
+            return false;
+        }
     }
 
     function getType(t) {
