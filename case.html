@@ -26,6 +26,21 @@
             width: 100%;
             height: 100%;
         }
+
+        .popover-content ul {
+            margin: 0;
+            padding: 0;
+            color: #7C7C7C;
+            font-size: 12px;
+        }
+        .popover-content ul li {
+            padding: 5px;
+            cursor: pointer;
+        }
+        .popover-content ul li:hover, .popover-content ul li.active {
+            color: #005490;
+            font-weight: bold;
+        }
     </style>
 </head>
 
@@ -43,7 +58,26 @@
                     </a>
                 </li>
 
-                <li>
+                <li id="ganziCase" data-content='<ul>
+                    <li class="subcity" data-filter=".qita.kd">康定市</li>
+                    <li class="subcity" data-filter=".qita.ld">泸定县</li>
+                    <li class="subcity" data-filter=".qita.db">丹巴县</li>
+                    <li class="subcity" data-filter=".qita.sd">色达县</li>
+                    <li class="subcity" data-filter=".qita.jl">九龙县</li>
+                    <li class="subcity" data-filter=".qita.yj">雅江县</li>
+                    <li class="subcity" data-filter=".qita.lt">理塘县</li>
+                    <li class="subcity" data-filter=".qita.dc">稻城县</li>
+                    <li class="subcity" data-filter=".qita.xc">乡城县</li>
+                    <li class="subcity" data-filter=".qita.dr">得荣县</li>
+                    <li class="subcity" data-filter=".qita.bt">巴塘县</li>
+                    <li class="subcity" data-filter=".qita.df">道孚县</li>
+                    <li class="subcity" data-filter=".qita.lh">炉霍县</li>
+                    <li class="subcity" data-filter=".qita.gz">甘孜县</li>
+                    <li class="subcity" data-filter=".qita.dg">德格县</li>
+                    <li class="subcity" data-filter=".qita.sj">石渠县</li>
+                    <li class="subcity" data-filter=".qita.by">白玉县</li>
+                    <li class="subcity" data-filter=".qita.xl">新龙县</li>
+                </ul>'>
                     <a class="qitacls" href="#" data-filter=".qita">
                         <h5>甘孜州</h5>
                     </a>
