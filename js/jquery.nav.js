@@ -178,7 +178,9 @@
 
                 //Removing the auto-adjust on scroll
                 self.unbindInterval();
-
+                
+                //如果地址栏里无hash值，则不定位
+                if ( !self.getHash($link) ) return;
                 //Scroll to the correct position
                 self.scrollTo(newLoc, function () {
                     //Do we need to change the hash?
